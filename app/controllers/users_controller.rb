@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   end
 
   def book_params
-    params.require(:user).permit(:userName, :firstName, :lastName)
+    params.require(:user).permit(:userName, :firstName, :lastName, :mail, :club_id, :street, :city)
   end
 
   def destroy
