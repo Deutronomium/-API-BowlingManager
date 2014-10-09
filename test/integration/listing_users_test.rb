@@ -2,8 +2,10 @@ require 'test_helper'
 
 class ListingUsersTest < ActionDispatch::IntegrationTest
   setup do
-    User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes')
-    User.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch')
+    @club = Club.create!(name: 'Glühwürmchen')
+
+    @club.users.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes')
+    @club.users.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch')
   end
 
   test 'listing users' do
@@ -12,7 +14,10 @@ class ListingUsersTest < ActionDispatch::IntegrationTest
     assert_equal 200, response.status
     assert_equal Mime::JSON, response.content_type
 
-    assert_equal User.count, json(response.body)[:users].size
+    users = json(response.body)[:users]
+    assert_equal User.count, users.size
+    user = User.find(users.first[:id])
+    assert_equal @club.id, user.club.id
   end
 
   test 'filter user by username' do
