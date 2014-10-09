@@ -12,7 +12,7 @@ class ListingUsersTest < ActionDispatch::IntegrationTest
     assert_equal 200, response.status
     assert_equal Mime::JSON, response.content_type
 
-    assert_equal User.count, JSON.parse(response.body).size
+    assert_equal User.count, json(response.body).size
   end
 
   test 'filter user by username' do
@@ -21,6 +21,6 @@ class ListingUsersTest < ActionDispatch::IntegrationTest
     assert_equal 200, response.status
     assert_equal Mime::JSON, response.content_type
 
-    assert_equal 1, JSON.parse(response.body).size
+    assert_equal 1, json(response.body).size
   end
 end
