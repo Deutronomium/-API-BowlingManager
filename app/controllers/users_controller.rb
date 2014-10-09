@@ -19,4 +19,10 @@ class UsersController < ApplicationController
   def book_params
     params.require(:user).permit(:userName, :firstName, :lastName)
   end
+
+  def destroy
+    user = User.find(params[:id])
+    user.destroy!
+    render nothing: true, status: 204
+  end
 end
