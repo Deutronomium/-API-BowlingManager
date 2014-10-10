@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(book_params)
+    user = User.new(user_params)
     if user.save
       render json: user, status: 201, location: user
     else
@@ -16,13 +16,20 @@ class UsersController < ApplicationController
     end
   end
 
-  def book_params
-    params.require(:user).permit(:userName, :firstName, :lastName, :mail, :club_id, :street, :city)
+  def update
+    user = User.find(params[:id])
+    if user.update(user_params)
+      render json: user, status: 200
+    end
   end
 
   def destroy
     user = User.find(params[:id])
     user.destroy!
     render nothing: true, status: 204
+  end
+
+  def user_params
+    params.require(:user).permit(:userName, :firstName, :lastName, :mail, :club_id, :street, :city)
   end
 end
