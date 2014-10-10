@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class CreatingUsersTest < ActionDispatch::IntegrationTest
+  setup { @club = Club.create!(name: 'Glühwürmchen') }
+
   test 'creates new user with valid data' do
     post '/users', { user: {
         userName: 'Deutro',
@@ -8,7 +10,7 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
         lastName: 'Engelkes',
         mail: 'patrick.engelkes@gmail.com',
         street: 'Friedenstraße',
-        club_id: 1,
+        club_id: @club.id,
         city: 'Rheine'
     } }.to_json,
     { 'Accept' => 'application/json',
