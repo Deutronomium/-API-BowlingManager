@@ -28,7 +28,7 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
     assert_equal 'Rheine', user [:city]
   end
 
-  test 'does not create books with invalid data' do
+  test 'does not create user with invalid data' do
     post '/users', { user: {
         userName: nil,
         firstName: 'Patrick',
