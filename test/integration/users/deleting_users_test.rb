@@ -5,7 +5,7 @@ class DeletingUsersTest < ActionDispatch::IntegrationTest
     @user = User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes')
   end
 
-  test 'delete books' do
+  test 'delete users' do
     delete "/users/#{@user.id}"
 
     assert_equal 204, response.status

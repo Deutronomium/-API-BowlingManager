@@ -16,6 +16,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    user = User.find(params[:id])
+    user.destroy!
+    render nothing: true, status: 204
+  end
+
   def update
     user = User.find(params[:id])
     if user.update(user_params)
@@ -23,12 +29,6 @@ class UsersController < ApplicationController
     else
       render json: user.errors, status: 422
     end
-  end
-
-  def destroy
-    user = User.find(params[:id])
-    user.destroy!
-    render nothing: true, status: 204
   end
 
   def user_params

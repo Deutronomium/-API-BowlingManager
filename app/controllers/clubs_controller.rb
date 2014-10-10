@@ -12,6 +12,21 @@ class ClubsController < ApplicationController
     end
   end
 
+  def destroy
+    club = Club.find(params[:id])
+    club.destroy!
+    render nothing: true, status: 204
+  end
+
+  def update
+    club = Club.find(params[:id])
+    if club.update(club_params)
+      render json: club, status: 200
+    else
+      render json: club.errors, status: 422
+    end
+  end
+
   def club_params
     params.require(:club).permit(:name)
   end
