@@ -16,7 +16,6 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
 
     assert_equal 201, response.status
     assert_equal Mime::JSON, response.content_type
-    print response.body
     user = json(response.body)[:user]
     assert_equal user_url(user[:id]), response.location
 
