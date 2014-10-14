@@ -4,7 +4,7 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
   setup { @club = Club.create!(name: 'Glühwürmchen') }
 
   test 'creates new user with valid data' do
-    post '/users', { user: {
+    post '/users', { Deutro: {
         userName: 'Deutro',
         firstName: 'Patrick',
         lastName: 'Engelkes',
@@ -18,7 +18,7 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
 
     assert_equal 201, response.status
     assert_equal Mime::JSON, response.content_type
-    user = json(response.body)[:user]
+    user = json(response.body)[:Deutro]
     assert_equal user_url(user[:id]), response.location
 
     assert_equal 'Deutro', user[:userName]
@@ -31,7 +31,7 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
   end
 
   test 'does not create user with invalid data' do
-    post '/users', { user: {
+    post '/users', { Deutro: {
         userName: nil,
         firstName: 'Patrick',
         lastName: 'Engelkes'

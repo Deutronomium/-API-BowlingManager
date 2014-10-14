@@ -1,11 +1,11 @@
 require 'test_helper'
 
 class PatchingEventsTest < ActionDispatch::IntegrationTest
-  setup { @event = Event.create!(name: 'Kegeln', date: DateTime.new(2014, 4, 4), club_id: 1) }
+  setup { @kegeln = Event.create!(name: 'Kegeln', date: DateTime.new(2014, 4, 4), club_id: 1) }
 
   test 'updating event' do
-    patch "/events/#{@event.id}",
-          { event: {
+    patch "/events/#{@kegeln.id}",
+          { kegeln: {
               name: 'Patch'
           }}.to_json,
           {
@@ -14,12 +14,12 @@ class PatchingEventsTest < ActionDispatch::IntegrationTest
           }
 
     assert_equal 200, response.status
-    assert_equal 'Patch', @event.reload.name
+    assert_equal 'Patch', @kegeln.reload.name
   end
 
   test 'does not update event with invalid data' do
-    patch "/events/#{@event.id}",
-          { event: {
+    patch "/events/#{@kegeln.id}",
+          { kegeln: {
               club_id: nil
           }}.to_json,
           {

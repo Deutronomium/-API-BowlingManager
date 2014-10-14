@@ -1,20 +1,20 @@
 require 'test_helper'
 
 class PatchingUsersTest < ActionDispatch::IntegrationTest
-  setup { @user = User.create(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes') }
+  setup { @Deutro = User.create(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes') }
 
   test 'updating user' do
-    patch ("/users/#{@user.id}"),
-          { user: { userName: 'Patch', firstName: 'Test', lastName: 'Test' } }.to_json,
+    patch ("/users/#{@Deutro.id}"),
+          { Deutro: { userName: 'Patch', firstName: 'Test', lastName: 'Test' } }.to_json,
           { 'Accept' => Mime::JSON, 'Content-Type' => Mime::JSON.to_s }
 
     assert_equal 200, response.status
-    assert_equal 'Patch', @user.reload.userName
+    assert_equal 'Patch', @Deutro.reload.userName
   end
 
   test 'unsuccessful update on short userName' do
-    patch ("/users/#{@user.id}"),
-          { user: { userName: 'Pa', firstName: 'Test', lastName: 'Test' } }.to_json,
+    patch ("/users/#{@Deutro.id}"),
+          { Deutro: { userName: 'Pa', firstName: 'Test', lastName: 'Test' } }.to_json,
           { 'Accept' => Mime::JSON, 'Content-Type' => Mime::JSON.to_s }
 
     assert_equal 422, response.status

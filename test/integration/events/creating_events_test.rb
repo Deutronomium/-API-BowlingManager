@@ -5,7 +5,7 @@ class CreatingEventsTest < ActionDispatch::IntegrationTest
 
   test 'creates new event with valid data' do
     post '/events',
-         { event: {
+         { kegeln: {
              name: 'Kegeln',
              club_id: @club.id,
              date: DateTime.new(2014, 4, 4)
@@ -23,7 +23,7 @@ class CreatingEventsTest < ActionDispatch::IntegrationTest
 
   test 'does not create event with invalid data' do
     post '/events',
-         { event: {
+         { kegeln: {
              name: 'Kegeln',
              club_id: nil,
              date: DateTime.new(2014, 4, 4)

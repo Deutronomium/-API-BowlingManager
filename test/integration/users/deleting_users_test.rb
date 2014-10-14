@@ -2,11 +2,11 @@ require 'test_helper'
 
 class DeletingUsersTest < ActionDispatch::IntegrationTest
   setup do
-    @user = User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes')
+    @Deutro = User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes')
   end
 
   test 'delete users' do
-    delete "/users/#{@user.id}"
+    delete "/users/#{@Deutro.id}"
 
     assert_equal 204, response.status
   end
