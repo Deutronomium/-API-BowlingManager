@@ -8,7 +8,7 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
         userName: 'Deutro',
         firstName: 'Patrick',
         lastName: 'Engelkes',
-        mail: 'patrick.engelkes@gmail.com',
+        email: 'patrick.engelkes@gmail.com',
         street: 'Friedenstraße',
         club_id: @club.id,
         city: 'Rheine'
@@ -24,7 +24,7 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
     assert_equal 'Deutro', user[:userName]
     assert_equal 'Patrick', user[:firstName]
     assert_equal 'Engelkes', user [:lastName]
-    assert_equal 'patrick.engelkes@gmail.com', user [:mail]
+    assert_equal 'patrick.engelkes@gmail.com', user [:email]
     assert_equal 'Friedenstraße', user [:street]
     assert_equal 1, user [:club_id]
     assert_equal 'Rheine', user [:city]

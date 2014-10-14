@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20141013122912) do
     t.datetime "updated_at"
     t.string   "city"
     t.string   "street"
-    t.string   "mail"
+    t.string   "email"
     t.integer  "club_id"
   end
 
