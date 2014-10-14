@@ -5,7 +5,7 @@ class PatchingUsersTest < ActionDispatch::IntegrationTest
 
   test 'updating user' do
     patch ("/users/#{@Deutro.id}"),
-          { Deutro: { userName: 'Patch', firstName: 'Test', lastName: 'Test' } }.to_json,
+          { user: { userName: 'Patch', firstName: 'Test', lastName: 'Test' } }.to_json,
           { 'Accept' => Mime::JSON, 'Content-Type' => Mime::JSON.to_s }
 
     assert_equal 200, response.status
@@ -14,7 +14,7 @@ class PatchingUsersTest < ActionDispatch::IntegrationTest
 
   test 'unsuccessful update on short userName' do
     patch ("/users/#{@Deutro.id}"),
-          { Deutro: { userName: 'Pa', firstName: 'Test', lastName: 'Test' } }.to_json,
+          { user: { userName: 'Pa', firstName: 'Test', lastName: 'Test' } }.to_json,
           { 'Accept' => Mime::JSON, 'Content-Type' => Mime::JSON.to_s }
 
     assert_equal 422, response.status

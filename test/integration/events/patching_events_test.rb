@@ -5,7 +5,7 @@ class PatchingEventsTest < ActionDispatch::IntegrationTest
 
   test 'updating event' do
     patch "/events/#{@kegeln.id}",
-          { kegeln: {
+          { event: {
               name: 'Patch'
           }}.to_json,
           {
@@ -19,7 +19,7 @@ class PatchingEventsTest < ActionDispatch::IntegrationTest
 
   test 'does not update event with invalid data' do
     patch "/events/#{@kegeln.id}",
-          { kegeln: {
+          { event: {
               club_id: nil
           }}.to_json,
           {

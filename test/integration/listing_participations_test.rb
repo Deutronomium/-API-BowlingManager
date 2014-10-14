@@ -20,7 +20,7 @@ class ListingParticipationsTest < ActionDispatch::IntegrationTest
 
     assert_equal 200, response.status
     assert_equal Mime::JSON, response.content_type
-    assert_equal 2, json(response.body)[:participations].size
+    assert_equal 4, json(response.body)[:participations].size
   end
 
   test 'listing participations by event' do
