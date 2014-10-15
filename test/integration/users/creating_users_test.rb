@@ -11,7 +11,9 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
         email: 'patrick.engelkes@gmail.com',
         street: 'Friedenstraße',
         club_id: @club.id,
-        city: 'Rheine'
+        city: 'Rheine',
+        password: 'test',
+        password_confirmation: 'test'
     } }.to_json,
     { 'Accept' => 'application/json',
       'Content-Type' => 'application/json' }
@@ -34,7 +36,10 @@ class CreatingUsersTest < ActionDispatch::IntegrationTest
     post '/users', { user: {
         userName: nil,
         firstName: 'Patrick',
-        lastName: 'Engelkes'
+        lastName: 'Engelkes',
+        password: 'test',
+        password_confirmation: 'test',
+        email: 'test@test.de'
     } }.to_json,
     { 'Accept' => 'application/json',
       'Content-Type' => 'application/json' }

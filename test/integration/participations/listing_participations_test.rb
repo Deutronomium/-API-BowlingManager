@@ -3,8 +3,8 @@ require 'test_helper'
 class ListingParticipationsTest < ActionDispatch::IntegrationTest
   setup do
     @club = Club.create!(name: 'Glühwürmchen')
-    @Deutro = @club.users.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes')
-    @Munni = @club.users.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch')
+    @Deutro = @club.users.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes', password: 'test', password_confirmation: 'test', email: 'test@test.de')
+    @Munni = @club.users.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch', password: 'test', password_confirmation: 'test', email: 'test@test.de')
     @kegeln = @club.events.create!(name: 'Kegeln')
     @fahrt = @club.events.create!(name: 'Fahrt')
 

@@ -4,8 +4,8 @@ class ListingUsersTest < ActionDispatch::IntegrationTest
   setup do
     @club = Club.create!(name: 'Glühwürmchen')
 
-    @club.users.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes')
-    @club.users.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch')
+    @club.users.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes', password: 'test', password_confirmation: 'test', email: 'test@test.de' )
+    @club.users.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch', password: 'test', password_confirmation: 'test', email: 'test@test.de' )
   end
 
   test 'listing users' do
