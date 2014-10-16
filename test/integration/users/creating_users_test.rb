@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class CreatingUsersTest < ActionDispatch::IntegrationTest
-  setup { @club = Club.create!(name: 'Glühwürmchen') }
+  setup { @club = FactoryGirl.create(:club) }
 
   test 'creates new user with valid data' do
     post '/users', { user: {

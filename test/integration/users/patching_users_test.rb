@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class PatchingUsersTest < ActionDispatch::IntegrationTest
-  setup { @Deutro = User.create(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes', password: 'test', password_confirmation: 'test', email: 'test@test.de' ) }
+  setup { @Deutro = FactoryGirl.create(:user) }
 
   test 'updating user' do
     patch ("/users/#{@Deutro.id}"),

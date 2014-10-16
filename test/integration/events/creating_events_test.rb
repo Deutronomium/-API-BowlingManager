@@ -1,12 +1,14 @@
 require 'test_helper'
 
 class CreatingEventsTest < ActionDispatch::IntegrationTest
-  setup { @club = Club.create(name: 'Glühwürmchen') }
+  setup do
+    @club = FactoryGirl.create(:club)
+  end
 
   test 'creates new event with valid data' do
     post '/events',
          { event: {
-             name: 'Kegeln',
+             name: 'Bowling',
              club_id: @club.id,
              date: DateTime.new(2014, 4, 4)
          }}.to_json,
@@ -24,7 +26,7 @@ class CreatingEventsTest < ActionDispatch::IntegrationTest
   test 'does not create event with invalid data' do
     post '/events',
          { event: {
-             name: 'Kegeln',
+             name: 'Bowling',
              club_id: nil,
              date: DateTime.new(2014, 4, 4)
          }}.to_json,

@@ -2,10 +2,10 @@ require 'test_helper'
 
 class ListingUsersTest < ActionDispatch::IntegrationTest
   setup do
-    @club = Club.create!(name: 'Glühwürmchen')
+    @club = @club = FactoryGirl.create(:club)
 
-    @club.users.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes', password: 'test', password_confirmation: 'test', email: 'test@test.de' )
-    @club.users.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch', password: 'test', password_confirmation: 'test', email: 'test@test.de' )
+    FactoryGirl.create(:user, club: @club)
+    FactoryGirl.create(:user, club: @club, userName: 'Munni')
   end
 
   test 'listing users' do

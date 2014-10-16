@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class PatchingClubsTest < ActionDispatch::IntegrationTest
-  setup { @club = Club.create!(name: 'Glühwürmchen') }
+  setup { @club = FactoryGirl.create(:club)}
 
   test 'updating club with valid data' do
     patch ("/clubs/#{@club.id}"),

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class DeletingClubsTest < ActionDispatch::IntegrationTest
   setup do
-    @club = Club.create!(name: 'Glühwürmchen')
+    @club = FactoryGirl.create(:club)
   end
 
   test 'delete clubs' do

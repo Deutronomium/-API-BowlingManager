@@ -2,12 +2,13 @@ require 'test_helper'
 
 class ListingEventsTest < ActionDispatch::IntegrationTest
   setup do
-    @club = Club.create!(name: 'Glühwürmchen')
-    @secondClub = Club.create!(name: 'Schickeria')
+    @glühwürmchen = FactoryGirl.create(:club)
+    @schickeria = FactoryGirl.create(:club, name: 'Schickeria')
 
-    @club.events.create!(name: 'Kegeln')
-    @secondClub.events.create!(name: 'Kegeln')
-    @secondClub.events.create!(name: 'Kegeln')
+    FactoryGirl.create(:event, club: @glühwürmchen)
+
+    FactoryGirl.create(:event, club: @schickeria)
+    FactoryGirl.create(:event, club: @schickeria)
   end
 
   test 'listing events' do
@@ -19,7 +20,7 @@ class ListingEventsTest < ActionDispatch::IntegrationTest
     events = json(response.body)[:events]
     assert_equal Event.count, events.size
     event = Event.find(events.first[:id])
-    assert_equal @club.id, event.club.id
+    assert_equal @glühwürmchen.id, event.club.id
   end
 
   test 'filter by club_id' do

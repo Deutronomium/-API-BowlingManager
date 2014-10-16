@@ -2,17 +2,19 @@ require 'test_helper'
 
 class ListingParticipationsTest < ActionDispatch::IntegrationTest
   setup do
-    @club = Club.create!(name: 'Glühwürmchen')
-    @Deutro = @club.users.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes', password: 'test', password_confirmation: 'test', email: 'test@test.de')
-    @Munni = @club.users.create!(userName: 'Munni', firstName: 'Monique', lastName: 'Toepsch', password: 'test', password_confirmation: 'test', email: 'test@test.de')
-    @kegeln = @club.events.create!(name: 'Kegeln')
-    @fahrt = @club.events.create!(name: 'Fahrt')
+    @club = FactoryGirl.create(:club)
 
-    @Deutro.participations.create!(event_id: @kegeln.id)
-    @Munni.participations.create!(event_id: @kegeln.id)
+    @Deutro = FactoryGirl.create(:user, club: @club)
+    @Munni = FactoryGirl.create(:user, club: @club, userName: 'Munni')
 
-    @Deutro.participations.create!(event_id: @fahrt.id)
-    @Munni.participations.create!(event_id: @fahrt.id)
+    @bowling = FactoryGirl.create(:event)
+    @driving = FactoryGirl.create(:event, name: 'Driving')
+
+    FactoryGirl.create(:participation, event: @bowling, user: @Deutro)
+    FactoryGirl.create(:participation, event: @driving, user: @Deutro)
+
+    FactoryGirl.create(:participation, event: @bowling, user: @Munni)
+    FactoryGirl.create(:participation, event: @driving, user: @Munni)
   end
 
   test 'listing participations' do
