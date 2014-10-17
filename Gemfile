@@ -31,6 +31,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 # Use unicorn as the app server
