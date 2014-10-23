@@ -13,9 +13,14 @@ class ClubsController < ApplicationController
   end
 
   def destroy
-    club = Club.find(params[:id])
-    club.destroy!
-    render nothing: true, status: 204
+    begin
+      club = Club.find(params[:id])
+      club.destroy!
+      render nothing: true, status: 204
+    rescue ActiveRecord::RecordNotFound
+      error = { error: { club: 'club not found' } }
+      render json: error.to_json, status: 422
+    end
   end
 
   def update

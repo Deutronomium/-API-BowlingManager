@@ -34,7 +34,7 @@ describe '#patching users' do
       response.status.should eq(422)
     end
 
-    it 'should have userName in its error' do
+    it 'should have an error for username' do
       error = json(response.body)
       error[:userName].should eq(["can't be blank"])
     end
