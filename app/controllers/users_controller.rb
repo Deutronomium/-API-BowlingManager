@@ -17,9 +17,16 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    user = User.find(params[:id])
-    user.destroy!
-    render nothing: true, status: 204
+    begin
+      user = User.find(params[:id])
+      user.destroy!
+      render nothing: true, status: 204
+    rescue ActiveRecord::RecordNotFound
+      error = { error: {
+          status: 'User not found'
+      } }
+      render json: error.to_json, status: 422
+    end
   end
 
   def update
