@@ -27,9 +27,14 @@ class EventsController < ApplicationController
   end
 
   def destroy
-    event = Event.find(params[:id])
-    event.destroy!
-    render nothing: true, status: 204
+    begin
+      event = Event.find(params[:id])
+      event.destroy!
+      render nothing: true, status: 204
+    rescue ActiveRecord::RecordNotFound
+      error = { error: { event: 'event not found' } }
+      render json: error.to_json, status: 422
+    end
   end
 
   def event_params
