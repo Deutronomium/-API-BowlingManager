@@ -8,7 +8,7 @@ class EventsController < ApplicationController
     render json: events, status: 200
   end
 
-  def createw
+  def create
     event = Event.create(event_params)
     if event.save
       render json: event, status: 201, location: event

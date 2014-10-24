@@ -5,7 +5,7 @@ describe '#creating events' do
     let(:club) { FactoryGirl.create(:club) }
 
     before do
-      post ('events'),
+      post ('/events'),
            { event: {
                name: 'Bowling',
                club_id: club.id,

@@ -7,7 +7,8 @@ describe 'creating users' do
 
   context '#creating user with valid data should succeed' do
     before do
-      post '/users', { user: {
+      post '/users',
+        { user: {
           userName: 'Deutro',
           firstName: 'Patrick',
           lastName: 'Engelkes',
