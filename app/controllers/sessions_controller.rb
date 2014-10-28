@@ -4,11 +4,11 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       render json: {
-        info: 'logged in'
+        response: 'login successful'
       }, status: 201
     else
       render json: {
-          error: 'login failed'
+          response: 'login failed'
       }, status: 401
     end
   end

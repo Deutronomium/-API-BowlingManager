@@ -28,8 +28,8 @@ describe '#logging in a user' do
 
     context '#content type' do
       it 'should have an info' do
-        info = json(response.body)[:info]
-        info.should eq('logged in')
+        info = json(response.body)[:response]
+        info.should eq('login successful')
       end
     end
   end
@@ -59,7 +59,7 @@ describe '#logging in a user' do
 
     context 'answer content' do
       it 'should have an error' do
-        error = json(response.body)[:error]
+        error = json(response.body)[:response]
         error.should eq('login failed')
       end
     end
