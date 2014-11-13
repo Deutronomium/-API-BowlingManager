@@ -16,16 +16,6 @@ describe User do
       user.should_not be_valid
     end
 
-    it 'is invalid without a firstname' do
-      user.firstName = nil
-      user.should_not be_valid
-    end
-
-    it 'is invalid without a lastname' do
-      user.lastName = nil
-      user.should_not be_valid
-    end
-
     it 'is invalid without a password' do
       user.password = nil
       user.should_not be_valid
