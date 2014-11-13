@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
   #Validation
   validates :userName, presence: true
-  validates :firstName, presence: true
-  validates :lastName, presence: true
+  #validates :firstName, presence: true
+  #validates :lastName, presence: true
   validates :password, presence: true
   validates :password_confirmation, presence: true
   validates :email, presence: true
