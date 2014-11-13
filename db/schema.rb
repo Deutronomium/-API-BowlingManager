@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141014202241) do
+ActiveRecord::Schema.define(version: 20141113170811) do
 
   create_table "clubs", force: true do |t|
     t.string   "name"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20141014202241) do
     t.string   "email"
     t.integer  "club_id"
     t.string   "password_digest"
+    t.string   "phone_number"
   end
 
 end

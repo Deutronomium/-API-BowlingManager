@@ -17,7 +17,8 @@ describe 'creating users' do
           club_id: @club.id,
           city: 'Rheine',
           password: 'test',
-          password_confirmation: 'test'
+          password_confirmation: 'test',
+          phone_number: '0111111111'
       } }.to_json,
            { 'Accept' => 'application/json',
              'Content-Type' => 'application/json' }

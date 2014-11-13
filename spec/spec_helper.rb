@@ -42,8 +42,15 @@ RSpec.configure do |config|
   config.order = "random"
 
   #clean database after each test run
-  config.after(:suite) do
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
+  end
+
+
+  config.around(:each) do |example|
+    DatabaseCleaner.clean_with(:truncation)
+    example.run
   end
 
   #include helper methods

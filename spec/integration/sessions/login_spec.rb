@@ -1,15 +1,15 @@
 require 'spec_helper'
 
 describe '#logging in a user' do
-  FactoryGirl.create(:user)
 
   context '#valid user credentials' do
     before do
+      FactoryGirl.create(:user)
       post '/sessions',
-           {
+           { session: {
                email: 'patrick.engelkes@gmail.com',
                password: 'test123'
-           }.to_json,
+           } }.to_json,
            {
                'Accept' => 'application/json',
                'Content-Type' => 'application/json'

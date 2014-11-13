@@ -11,38 +11,55 @@ describe User do
   end
 
   context '#fields' do
-    before do
-      FactoryGirl.create(:user)
+    context 'presence' do
+      it 'is invalid without a username' do
+        user.userName = nil
+        user.should_not be_valid
+      end
+
+      it 'is invalid without a password' do
+        user.password = nil
+        user.should_not be_valid
+      end
+
+      it 'is invalid without a password confirmation' do
+        user.password_confirmation = nil
+        user.should_not be_valid
+      end
+
+      it 'is invalid without an email' do
+        user.email = nil
+        user.should_not be_valid
+      end
+
+      it 'is invalid without a phone number' do
+        user.phone_number = nil
+        user.should_not be_valid
+      end
     end
 
-    it 'is invalid without a username' do
-      user.userName = nil
-      user.should_not be_valid
-    end
+    context 'uniqueness' do
+      before do
+        FactoryGirl.create(:user)
+        user.userName = 'NotUnique'
+        user.email = 'NotUnique'
+        user.phone_number = 'NotUnique'
+      end
 
-    it 'is invalid without a password' do
-      user.password = nil
-      user.should_not be_valid
-    end
+      it 'should be invalid with an already existing username' do
+        user.userName = 'Deutro'
+        user.should_not be_valid
+      end
 
-    it 'is invalid without a password confirmation' do
-      user.password_confirmation = nil
-      user.should_not be_valid
-    end
+      it 'should not be valid with an already existing email' do
+        user.email = 'patrick.engelkes@gmail.com'
+        user.should_not be_valid
+      end
 
-    it 'is invalid without an email' do
-      FactoryGirl.build(:user, email: nil).should_not be_valid
-    end
-
-    it 'should be invalid with an already existing username' do
-      user.userName = 'Deutro'
-      user.should_not be_valid
-    end
-
-    it 'should not be valid with an already existing email' do
-      user.userName = 'NotUnique'
-      user.email = 'patrick.engelkes@gmail.com'
-      user.should_not be_valid
+      it 'should not be valid with an already existing phone number' do
+        user.phone_number = '0111111111'
+        user.should_not be_valid
+      end
     end
   end
 
