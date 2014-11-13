@@ -11,6 +11,10 @@ describe User do
   end
 
   context '#fields' do
+    before do
+      FactoryGirl.create(:user)
+    end
+
     it 'is invalid without a username' do
       user.userName = nil
       user.should_not be_valid
@@ -28,6 +32,17 @@ describe User do
 
     it 'is invalid without an email' do
       FactoryGirl.build(:user, email: nil).should_not be_valid
+    end
+
+    it 'should be invalid with an already existing username' do
+      user.userName = 'Deutro'
+      user.should_not be_valid
+    end
+
+    it 'should not be valid with an already existing email' do
+      user.userName = 'NotUnique'
+      user.email = 'patrick.engelkes@gmail.com'
+      user.should_not be_valid
     end
   end
 

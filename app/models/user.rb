@@ -1,11 +1,9 @@
 class User < ActiveRecord::Base
   #Validation
-  validates :userName, presence: true
-  #validates :firstName, presence: true
-  #validates :lastName, presence: true
+  validates :userName, presence: true, uniqueness: true
   validates :password, presence: true
   validates :password_confirmation, presence: true
-  validates :email, presence: true
+  validates :email, presence: true, uniqueness: true
 
   #Before save
   before_save :downcase_email
