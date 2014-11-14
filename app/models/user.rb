@@ -19,4 +19,16 @@ class User < ActiveRecord::Base
   def downcase_email
     self.email = email.downcase
   end
+
+  def attribute_valid?(attribute_name)
+    self.valid?
+    self.errors[attribute_name].blank?
+  end
+
+  def email_and_user_name_valid?
+    self.valid?
+    print self.errors[:userName].blank?
+    print self.errors[:email].blank?
+    return (self.errors[:userName].blank? || self.errors[:email].blank?)
+  end
 end

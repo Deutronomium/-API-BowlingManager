@@ -38,6 +38,26 @@ class UsersController < ApplicationController
     end
   end
 
+  def check
+    user = User.new(user_params)
+    if !user.email_and_user_name_valid?
+      print 'test'
+      render json: {
+                 error: 'Username and email already exists. Please choose a different name and email!'
+             }, status: 422
+    elsif !user.attribute_valid?('userName')
+      render json: {
+                 userName: 'This username already exists. Please choose another one!'
+             }, status: 422
+    elsif !user.attribute_valid?('email')
+      render json: {
+                 userName: 'This email already exists. Please choose another one!'
+             }, status: 422
+    else
+      render json: user, status: 200
+    end
+  end
+
   def user_params
     params.require(:user).permit(:userName, :firstName, :lastName, :email, :club_id, :street, :city, :password,
                                  :password_confirmation, :phone_number)
