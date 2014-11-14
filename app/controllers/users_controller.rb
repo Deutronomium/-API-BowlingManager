@@ -43,7 +43,7 @@ class UsersController < ApplicationController
     if !user.email_and_user_name_valid?
       print 'test'
       render json: {
-                 error: 'Username and email already exists. Please choose a different name and email!'
+                 error: 'Username and email already exist. Please choose a different name and email!'
              }, status: 422
     elsif !user.attribute_valid?('userName')
       render json: {
