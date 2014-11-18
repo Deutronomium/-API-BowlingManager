@@ -32,6 +32,17 @@ class ClubsController < ApplicationController
     end
   end
 
+  def check
+    club = Club.new(club_params)
+    if !club.attribute_valid?('name')
+      render json: {
+                 name: 'This clubname already exists. Please choose another one!'
+             }, status: 422
+    else
+      render json: club, status: 200
+    end
+  end
+
   def club_params
     params.require(:club).permit(:name)
   end

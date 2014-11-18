@@ -5,7 +5,7 @@ describe 'checking user_validity' do
     @user = FactoryGirl.create(:user)
   end
 
-  context 'user with valid data should be valid' do
+  context 'user with valid data should not return an error' do
     before do
       post '/users/validity',
            { user: {

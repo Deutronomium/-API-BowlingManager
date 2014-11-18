@@ -1,5 +1,9 @@
 FactoryGirl.define do
+  sequence :name do |n|
+    "person#{n}@example.com"
+  end
+
   factory :club do
-    name 'Glühwürmchen'
+    name { generate(:name) }
   end
 end
