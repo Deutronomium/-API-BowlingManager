@@ -51,7 +51,7 @@ class UsersController < ApplicationController
              }, status: 422
     elsif !user.attribute_valid?('email')
       render json: {
-                 userName: 'This email already exists. Please choose another one!'
+                 email: 'This email already exists. Please choose another one!'
              }, status: 422
     else
       render json: user, status: 200
