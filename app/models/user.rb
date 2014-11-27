@@ -27,8 +27,6 @@ class User < ActiveRecord::Base
 
   def email_and_user_name_valid?
     self.valid?
-    print self.errors[:userName].blank?
-    print self.errors[:email].blank?
     return (self.errors[:userName].blank? || self.errors[:email].blank?)
   end
 end

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'checking user_validity' do
   before do
-    @user = FactoryGirl.create(:user)
+    @user = FactoryGirl.create(:user, userName: 'Deutro')
   end
 
   context 'user with valid data should not return an error' do

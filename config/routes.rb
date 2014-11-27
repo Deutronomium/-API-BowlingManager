@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create]
 
   post 'users/validity', to: 'users#check'
+
   post 'clubs/validity', to: 'clubs#check'
 
+  post 'friends/registeredFriends', to: 'friends#registeredFriends'
 end

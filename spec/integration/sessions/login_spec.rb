@@ -4,7 +4,7 @@ describe '#logging in a user' do
 
   context '#valid user credentials' do
     before do
-      FactoryGirl.create(:user)
+      FactoryGirl.create(:user, email: 'patrick.engelkes@gmail.com')
       post '/sessions',
            { session: {
                email: 'patrick.engelkes@gmail.com',

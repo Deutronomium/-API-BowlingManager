@@ -5,7 +5,7 @@ describe 'listing users' do
   before do
     @club = FactoryGirl.create(:club)
 
-    FactoryGirl.create(:user, club: @club)
+    FactoryGirl.create(:user, club: @club, userName: 'Deutro')
     FactoryGirl.create(:user, club: @club, userName: 'Munni', email: 'munni@gmail.com', phone_number: '0222222222')
 
     get '/users'

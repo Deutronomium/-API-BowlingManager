@@ -30,7 +30,6 @@ describe '#patching users' do
     end
 
     it 'should respond with unprocessable entity' do
-      print json(response.body)
       response.status.should eq(422)
     end
 

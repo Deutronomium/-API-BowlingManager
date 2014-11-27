@@ -47,12 +47,12 @@ describe User do
       end
 
       it 'should be invalid with an already existing username' do
-        user.userName = 'Deutro'
+        user.userName = User.first.userName
         user.should_not be_valid
       end
 
       it 'should not be valid with an already existing email' do
-        user.email = 'patrick.engelkes@gmail.com'
+        user.email = User.first.email
         user.should_not be_valid
       end
 
@@ -89,13 +89,13 @@ describe User do
       user.phone_number = 'NotUnique'
     end
 
-    it 'should return false for an invalid name' do
-      user.email = 'NotUnique'
+    it 'should return false for an invalid userName' do
+      user.userName = User.first.userName
       user.attribute_valid?('userName').should be_false
     end
 
     it 'should return false for an invalid email' do
-      user.userName = 'NotUnique'
+      user.email = User.first.email
       user.attribute_valid?('email').should be_false
     end
   end
@@ -106,6 +106,8 @@ describe User do
     end
 
     it 'should return an error if userName and email are not unique' do
+      user.userName = User.first.userName
+      user.email = User.first.email
       user.email_and_user_name_valid?.should be_false
     end
 
