@@ -1,6 +1,6 @@
 class FriendsController < ApplicationController
   def registeredFriends
-    friend =  params[:friend]
+    friend =  params[:friends]
     phone_numbers = friend[:phone_numbers]
     matching_users = friend_phone_numbers(phone_numbers)
 
@@ -9,7 +9,7 @@ class FriendsController < ApplicationController
 
   def friend_params
     print params.class
-    params.require(:friend).permit(:phone_numbers => [])
+    params.require(:friends).permit(:phone_numbers => [])
   end
 
   def friend_phone_numbers(phone_numbers)

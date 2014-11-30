@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ffc9e3-a33c-4e38-b658-5c90f3fe3ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" afterPath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/users/check_validity_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/users/check_validity_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/users/listing_users_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/users/listing_users_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/sessions/login_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/sessions/login_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/users/patching_users_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/users/patching_users_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializers/user_serializer.rb" afterPath="$PROJECT_DIR$/app/serializers/user_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/factories/users.rb" afterPath="$PROJECT_DIR$/test/factories/users.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/friends_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/friends_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/friends/listing_friends_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/friends/listing_friends_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BowlingManagerAPI.iws" />
@@ -30,18 +20,18 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends_answer_type_response_content__BowlingManagerAPI.coverage" NAME="listing all friends answer type response content: BowlingManagerAPI Coverage Results" MODIFIED="1416995018434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_parse_string_to_array__BowlingManagerAPI.coverage" NAME="User parse string to array: BowlingManagerAPI Coverage Results" MODIFIED="1416506607067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_creates_new_user_with_valid_data__BowlingManagerAPI.coverage" NAME="test_creates_new_user_with_valid_data: BowlingManagerAPI Coverage Results" MODIFIED="1412959055386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_fields_uniqueness_should_be_invalid_with_an_already_existing_username__BowlingManagerAPI.coverage" NAME="User#fields uniqueness should be invalid with an already existing username: BowlingManagerAPI Coverage Results" MODIFIED="1416933118994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_parse_string_to_array__BowlingManagerAPI.coverage" NAME="User parse string to array: BowlingManagerAPI Coverage Results" MODIFIED="1416506607067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@checking_club_validity__BowlingManagerAPI.coverage" NAME="checking club validity: BowlingManagerAPI Coverage Results" MODIFIED="1416341105023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_fields_uniqueness_should_be_invalid_with_an_already_existing_username__BowlingManagerAPI.coverage" NAME="User#fields uniqueness should be invalid with an already existing username: BowlingManagerAPI Coverage Results" MODIFIED="1416933118994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@checking_user_validity__BowlingManagerAPI.coverage" NAME="checking user_validity: BowlingManagerAPI Coverage Results" MODIFIED="1416933644028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_attribute_should_return_false_for_an_invalid_name__BowlingManagerAPI.coverage" NAME="User#validate attribute should return false for an invalid name: BowlingManagerAPI Coverage Results" MODIFIED="1415978147931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered__BowlingManagerAPI.coverage" NAME="User get android contacts which are registered: BowlingManagerAPI Coverage Results" MODIFIED="1416932711995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@Club_fields_is_invalid_with__an_already_existing_name__BowlingManagerAPI.coverage" NAME="Club#fields is invalid with  an already existing name: BowlingManagerAPI Coverage Results" MODIFIED="1416341086284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered__BowlingManagerAPI.coverage" NAME="User get android contacts which are registered: BowlingManagerAPI Coverage Results" MODIFIED="1416932711995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@creating_users_test_friends_should_answer_with_status_code_200__BowlingManagerAPI.coverage" NAME="creating users test friends should answer with status code 200: BowlingManagerAPI Coverage Results" MODIFIED="1416987112130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_email_and_userName_should_be_true_if_only_one_of_them_is_not_unique__BowlingManagerAPI.coverage" NAME="User#validate email and userName should be true if only one of them is not unique: BowlingManagerAPI Coverage Results" MODIFIED="1415978500000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends_answer_type_response_content_should_answer_with_the_right_number_of_users__3___BowlingManagerAPI.coverage" NAME="listing all friends answer type response content should answer with the right number of users (3): BowlingManagerAPI Coverage Results" MODIFIED="1416994915793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations_by_users__BowlingManagerAPI.coverage" NAME="test_listing_participations_by_users: BowlingManagerAPI Coverage Results" MODIFIED="1413317249164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends_answer_type_response_content_should_answer_with_the_right_number_of_users__3___BowlingManagerAPI.coverage" NAME="listing all friends answer type response content should answer with the right number of users (3): BowlingManagerAPI Coverage Results" MODIFIED="1416994915793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_email_and_userName__BowlingManagerAPI.coverage" NAME="User#validate email and userName: BowlingManagerAPI Coverage Results" MODIFIED="1415978563961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User__BowlingManagerAPI.coverage" NAME="User: BowlingManagerAPI Coverage Results" MODIFIED="1416933325139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_friends_string_to_array_should_parse_an_array_from_a_string__BowlingManagerAPI.coverage" NAME="listing friends string to array should parse an array from a string: BowlingManagerAPI Coverage Results" MODIFIED="1416506371051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
@@ -56,12 +46,12 @@
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@All_tests_in_integration__BowlingManagerAPI.coverage" NAME="All tests in integration: BowlingManagerAPI Coverage Results" MODIFIED="1413471278716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_updating_user__BowlingManagerAPI.coverage" NAME="test_updating_user: BowlingManagerAPI Coverage Results" MODIFIED="1412949797279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_email_and_userName_should_return_an_error_if_userName_and_email_are_not_unique__BowlingManagerAPI.coverage" NAME="User#validate email and userName should return an error if userName and email are not unique: BowlingManagerAPI Coverage Results" MODIFIED="1416933032732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@FriendsController__BowlingManagerAPI.coverage" NAME="FriendsController: BowlingManagerAPI Coverage Results" MODIFIED="1416981322723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations_by_event__BowlingManagerAPI.coverage" NAME="test_listing_participations_by_event: BowlingManagerAPI Coverage Results" MODIFIED="1413205660140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@Club_fields_is_invali_without_a_club_name__BowlingManagerAPI.coverage" NAME="Club#fields is invali without a club name: BowlingManagerAPI Coverage Results" MODIFIED="1416341048118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_delete_clubs__BowlingManagerAPI.coverage" NAME="test_delete_clubs: BowlingManagerAPI Coverage Results" MODIFIED="1412975738846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@_logging_in_a_user__valid_user_credentials__content_type_should_have_an_info__BowlingManagerAPI.coverage" NAME="#logging in a user #valid user credentials #content type should have an info: BowlingManagerAPI Coverage Results" MODIFIED="1415901385073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@FriendsController__BowlingManagerAPI.coverage" NAME="FriendsController: BowlingManagerAPI Coverage Results" MODIFIED="1416981322723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_attribute__BowlingManagerAPI.coverage" NAME="User#validate attribute: BowlingManagerAPI Coverage Results" MODIFIED="1415978234398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@_logging_in_a_user__valid_user_credentials__content_type_should_have_an_info__BowlingManagerAPI.coverage" NAME="#logging in a user #valid user credentials #content type should have an info: BowlingManagerAPI Coverage Results" MODIFIED="1415901385073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_delete_clubs__BowlingManagerAPI.coverage" NAME="test_delete_clubs: BowlingManagerAPI Coverage Results" MODIFIED="1412975738846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@Club_fields_is_invali_without_a_club_name__BowlingManagerAPI.coverage" NAME="Club#fields is invali without a club name: BowlingManagerAPI Coverage Results" MODIFIED="1416341048118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_fields_should_be_invalid_with_an_already_existing_username__BowlingManagerAPI.coverage" NAME="User#fields should be invalid with an already existing username: BowlingManagerAPI Coverage Results" MODIFIED="1415896426180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_fields_should_not_be_valid_with_an_already_existing_email__BowlingManagerAPI.coverage" NAME="User#fields should not be valid with an already existing email: BowlingManagerAPI Coverage Results" MODIFIED="1415896697413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@All_specs_in_models__BowlingManagerAPI.coverage" NAME="All specs in models: BowlingManagerAPI Coverage Results" MODIFIED="1413585217306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
@@ -80,14 +70,24 @@
     <favorites_list name="BowlingManagerAPI" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44691536">
+    <splitter split-orientation="horizontal" split-proportion="0.7087518">
       <split-first>
         <leaf>
           <file leaf-file-name="friends_controller.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/friends_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-                  <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="465">
+                  <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="495">
+                  <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
                   <folding />
                 </state>
               </provider>
@@ -96,18 +96,18 @@
           <file leaf-file-name="friends_controller_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/controllers/friends_controller_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+                <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="345">
                   <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="listing_friends_spec.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="listing_friends_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/integration/friends/listing_friends_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5645161" vertical-offset="0" max-vertical-offset="720">
-                  <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="720">
+                  <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -116,8 +116,28 @@
           <file leaf-file-name="user_serializer.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/serializers/user_serializer.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+                <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="240">
                   <caret line="6" column="99" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="clubs.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/factories/clubs.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+                  <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="listing_clubs_spec.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/spec/integration/clubs/listing_clubs_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.96514744" vertical-offset="0" max-vertical-offset="450">
+                  <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -140,27 +160,27 @@
           <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/db/schema.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+                <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="855">
                   <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="creating_users_spec.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="creating_users_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/integration/users/creating_users_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2016129" vertical-offset="390" max-vertical-offset="1185">
-                  <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1185">
+                  <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+                <state vertical-scroll-proportion="0.48257372" vertical-offset="0" max-vertical-offset="373">
                   <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
                   <folding />
                 </state>
@@ -205,13 +225,11 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20141113170811_add_phone_number_to_user.rb" />
         <option value="$PROJECT_DIR$/spec/integration/participations/listing_participations_spec.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/clubs_controller.rb" />
         <option value="$PROJECT_DIR$/spec/models/club_spec.rb" />
         <option value="$PROJECT_DIR$/spec/integration/clubs/check_validity_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/club.rb" />
-        <option value="$PROJECT_DIR$/test/factories/clubs.rb" />
         <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
@@ -226,9 +244,11 @@
         <option value="$PROJECT_DIR$/spec/integration/users/creating_users_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/friends_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/serializers/user_serializer.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/friends_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/integration/friends/listing_friends_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/friends_controller.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/test/factories/clubs.rb" />
       </list>
     </option>
   </component>
@@ -822,10 +842,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.listing all friends answer type response content: BowlingManagerAPI" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.listing all friends answer type response content should answer with the right number of users (3): BowlingManagerAPI" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.listing all friends: BowlingManagerAPI" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.creating users test friends should answer with status code 200: BowlingManagerAPI" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.listing all friends answer type response content should answer with the right number of users (3): BowlingManagerAPI" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.listing all friends answer type response content: BowlingManagerAPI" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.creating users test friends should answer with status code 200: BowlingManagerAPI" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.listing all friends: BowlingManagerAPI" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.FriendsController: BowlingManagerAPI" />
       </list>
     </recent_temporary>
@@ -907,29 +927,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1436" height="877" extended-state="6" />
+    <frame x="4" y="23" width="1436" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4784217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50678176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50676507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968128" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2446198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49938348" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49938348" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292232" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49938348" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1001,13 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/clubs/listing_clubs_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1093,6 +1106,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,13 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="960">
           <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="4" column="84" selection-start-line="4" selection-start-column="84" selection-end-line="4" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1180,19 +1187,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/factories/clubs.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3448276" vertical-offset="0" max-vertical-offset="783">
           <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="9" max-vertical-offset="2190">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,7 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="780">
           <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,7 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1224,7 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4183267" vertical-offset="0" max-vertical-offset="502">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,7 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,7 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1563" max-vertical-offset="1935">
           <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.11904762" vertical-offset="180" max-vertical-offset="570">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1292,14 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/friends_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/integration/users/listing_users_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="1020">
@@ -1308,9 +1291,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/users/creating_users_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1185">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+        <state vertical-scroll-proportion="0.48257372" vertical-offset="0" max-vertical-offset="373">
           <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding />
         </state>
@@ -1319,23 +1310,47 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/friends_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/users/creating_users_spec.rb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2016129" vertical-offset="390" max-vertical-offset="1185">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="495">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/friends_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/integration/friends/listing_friends_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5645161" vertical-offset="0" max-vertical-offset="720">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="720">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/factories/clubs.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/clubs/listing_clubs_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96514744" vertical-offset="0" max-vertical-offset="450">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
         </state>
       </provider>
