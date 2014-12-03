@@ -1,6 +1,10 @@
 class ClubsController < ApplicationController
   def index
-    render json: Club.all, status: 200
+    clubs = Club.all
+    if clubName = params[:name]
+      clubs = clubs.where(name: clubName)
+    end
+    render json: clubs, status: 200
   end
 
   def create
@@ -43,7 +47,23 @@ class ClubsController < ApplicationController
     end
   end
 
+  def addMembers
+    add_members = params[:add_members]
+    club = Club.find_by_name(add_members[:club])
+    members = add_members[:members]
+    members.each do |member|
+      user = User.find_by_phone_number(member)
+      user.update_attribute(:club_id, club.id)
+    end
+
+    render nothing: true, status: 200
+  end
+
   def club_params
     params.require(:club).permit(:name)
+  end
+
+  def add_members_params
+    params.require(:add_members).permit(:club, :members => [])
   end
 end

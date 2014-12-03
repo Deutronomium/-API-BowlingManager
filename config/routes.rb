@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   post 'users/validity', to: 'users#check'
 
   post 'clubs/validity', to: 'clubs#check'
+  post 'clubs/add_members', to: 'clubs#addMembers'
 
   post 'friends/registeredFriends', to: 'friends#registeredFriends'
 end

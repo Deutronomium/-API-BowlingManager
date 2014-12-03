@@ -8,7 +8,6 @@ class FriendsController < ApplicationController
   end
 
   def friend_params
-    print params.class
     params.require(:friends).permit(:phone_numbers => [])
   end
 
