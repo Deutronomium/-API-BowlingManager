@@ -57,7 +57,7 @@ describe User do
       end
 
       it 'should not be valid with an already existing phone number' do
-        user.phone_number = '0111111111'
+        user.phone_number = User.first.phone_number
         user.should_not be_valid
       end
     end

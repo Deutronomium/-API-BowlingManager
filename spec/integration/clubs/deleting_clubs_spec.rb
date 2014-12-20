@@ -1,21 +1,41 @@
 require 'spec_helper'
 
 describe 'deleting clubs' do
-  let(:club) { FactoryGirl.create(:club) }
-
-  context '#deleting a club which can be found' do
+  context 'deleting a club which can be found' do
     before do
-      delete ("clubs/#{club.id}")
+      @club = FactoryGirl.create(:club, name: 'TestClub')
     end
 
-    it 'should respond without content' do
-      response.status.should eq(204)
+    context 'deleting by id' do
+      it 'should respond without content' do
+        delete ("clubs/#{@club.id}")
+        response.status.should eq(204)
+      end
     end
+
+    context 'deling by name' do
+      it 'should respond without content' do
+        post 'clubs/delete_by_name',
+            {
+              club: {
+                name: 'TestClub' 
+              }
+            }.to_json,
+            {
+              'Accept' => 'application/json',
+              'Content-Type' => 'application/json'
+            }
+
+        response.status.should eq(204)
+      end
+    end
+        
   end
 
   context 'deleting a club which is not in the database' do
     before do
-      delete ("clubs/#{123}")
+      @club = FactoryGirl.create(:club, name: 'TestClub')
+      delete ("clubs/123")
     end
 
     it 'should respond with unprocessable entity' do
@@ -27,4 +47,5 @@ describe 'deleting clubs' do
       error[:club].should_not be nil
     end
   end
+
 end

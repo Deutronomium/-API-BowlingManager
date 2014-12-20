@@ -1,16 +1,16 @@
 #create clubs
-@glühwürmchen = Club.create!(name: "Glühwürmchen");
+@testClub = Club.create!(name: "TestClub");
 
 @patrick = User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes',
                         email: 'patrick.engelkes@gmail.com', password: 'test123', password_confirmation: 'test123',
-                        phone_number: '0111111111')
+                        phone_number: '0111111111', club_id: @testClub.id)
 
 User.create!(userName: 'Test1', firstName: 'Test1', lastName: 'Test1', phone_number: '11111', email: 'Test1',
-              password: 'test', password_confirmation: 'test')
+              password: 'test', password_confirmation: 'test', club_id: @testClub.id)
 User.create!(userName: 'Test2', firstName: 'Test2', lastName: 'Test2', phone_number: '22222', email: 'Test2',
-             password: 'test', password_confirmation: 'test')
+             password: 'test', password_confirmation: 'test', club_id: @testClub.id)
 User.create!(userName: 'Test3', firstName: 'Test3', lastName: 'Test3', phone_number: '33333', email: 'Test3',
-             password: 'test', password_confirmation: 'test')
+             password: 'test', password_confirmation: 'test', club_id: @testClub.id)
 User.create!(userName: 'Test4', firstName: 'Test4', lastName: 'Test4', phone_number: '44444', email: 'Test4',
              password: 'test', password_confirmation: 'test')
 User.create!(userName: 'Test5', firstName: 'Test5', lastName: 'Test5', phone_number: '55555', email: 'Test5',

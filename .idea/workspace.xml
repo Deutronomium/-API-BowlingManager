@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ffc9e3-a33c-4e38-b658-5c90f3fe3ba6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" afterPath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers.rb" afterPath="$PROJECT_DIR$/spec/helpers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BowlingManagerAPI.iws" />
@@ -20,53 +17,55 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends_answer_type_response_content__BowlingManagerAPI.coverage" NAME="listing all friends answer type response content: BowlingManagerAPI Coverage Results" MODIFIED="1416995018434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@getting_club_from_the_user_answer_type__BowlingManagerAPI.coverage" NAME="getting club from the user answer type: BowlingManagerAPI Coverage Results" MODIFIED="1417769098291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_creates_new_user_with_valid_data__BowlingManagerAPI.coverage" NAME="test_creates_new_user_with_valid_data: BowlingManagerAPI Coverage Results" MODIFIED="1412959055386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_parse_string_to_array__BowlingManagerAPI.coverage" NAME="User parse string to array: BowlingManagerAPI Coverage Results" MODIFIED="1416506607067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@checking_club_validity__BowlingManagerAPI.coverage" NAME="checking club validity: BowlingManagerAPI Coverage Results" MODIFIED="1416341105023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_fields_uniqueness_should_be_invalid_with_an_already_existing_username__BowlingManagerAPI.coverage" NAME="User#fields uniqueness should be invalid with an already existing username: BowlingManagerAPI Coverage Results" MODIFIED="1416933118994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@getting_club_from_the_user_answer_content_should_respond_with_the_correct_club__BowlingManagerAPI.coverage" NAME="getting club from the user answer content should respond with the correct club: BowlingManagerAPI Coverage Results" MODIFIED="1417770179339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@checking_club_validity__BowlingManagerAPI.coverage" NAME="checking club validity: BowlingManagerAPI Coverage Results" MODIFIED="1416341105023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@adding_friends_to_a_club_users_added_to_club__BowlingManagerAPI.coverage" NAME="adding friends to a club users added to club: BowlingManagerAPI Coverage Results" MODIFIED="1417590317206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@checking_user_validity__BowlingManagerAPI.coverage" NAME="checking user_validity: BowlingManagerAPI Coverage Results" MODIFIED="1416933644028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_attribute_should_return_false_for_an_invalid_name__BowlingManagerAPI.coverage" NAME="User#validate attribute should return false for an invalid name: BowlingManagerAPI Coverage Results" MODIFIED="1415978147931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@creating_users__creating_user_with_valid_data_should_succeed__answer_type_should_answer_with_json__BowlingManagerAPI.coverage" NAME="creating users #creating user with valid data should succeed #answer type should answer with json: BowlingManagerAPI Coverage Results" MODIFIED="1417770517552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@Club_fields_is_invalid_with__an_already_existing_name__BowlingManagerAPI.coverage" NAME="Club#fields is invalid with  an already existing name: BowlingManagerAPI Coverage Results" MODIFIED="1416341086284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered__BowlingManagerAPI.coverage" NAME="User get android contacts which are registered: BowlingManagerAPI Coverage Results" MODIFIED="1416932711995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@adding_friends_to_a_club_should_respond_with_status_ok__BowlingManagerAPI.coverage" NAME="adding friends to a club should respond with status ok: BowlingManagerAPI Coverage Results" MODIFIED="1417590229795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@creating_users_test_friends_should_answer_with_status_code_200__BowlingManagerAPI.coverage" NAME="creating users test friends should answer with status code 200: BowlingManagerAPI Coverage Results" MODIFIED="1416987112130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@adding_friends_to_a_club_should_respond_with_status_ok__BowlingManagerAPI.coverage" NAME="adding friends to a club should respond with status ok: BowlingManagerAPI Coverage Results" MODIFIED="1417590229795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@creating_users__creating_user_with_valid_data_should_succeed__answer_content__BowlingManagerAPI.coverage" NAME="creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI Coverage Results" MODIFIED="1417770097353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_email_and_userName_should_be_true_if_only_one_of_them_is_not_unique__BowlingManagerAPI.coverage" NAME="User#validate email and userName should be true if only one of them is not unique: BowlingManagerAPI Coverage Results" MODIFIED="1415978500000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@_listing_all_clubs_with_filter_answer_content__BowlingManagerAPI.coverage" NAME="#listing all clubs with filter answer content: BowlingManagerAPI Coverage Results" MODIFIED="1417769767305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations_by_users__BowlingManagerAPI.coverage" NAME="test_listing_participations_by_users: BowlingManagerAPI Coverage Results" MODIFIED="1413317249164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends_answer_type_response_content_should_answer_with_the_right_number_of_users__3___BowlingManagerAPI.coverage" NAME="listing all friends answer type response content should answer with the right number of users (3): BowlingManagerAPI Coverage Results" MODIFIED="1416994915793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations_by_users__BowlingManagerAPI.coverage" NAME="test_listing_participations_by_users: BowlingManagerAPI Coverage Results" MODIFIED="1413317249164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@_listing_all_clubs_with_filter_answer_content__BowlingManagerAPI.coverage" NAME="#listing all clubs with filter answer content: BowlingManagerAPI Coverage Results" MODIFIED="1417769767305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered_should_parse_an_array_with_phone_numbers_from_a_string__BowlingManagerAPI.coverage" NAME="User get android contacts which are registered should parse an array with phone numbers from a string: BowlingManagerAPI Coverage Results" MODIFIED="1416932705432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_unsuccessful_update_on_short_userName__BowlingManagerAPI.coverage" NAME="test_unsuccessful_update_on_short_userName: BowlingManagerAPI Coverage Results" MODIFIED="1412950662873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered_should_return_the_correct_amount_of_users__3___BowlingManagerAPI.coverage" NAME="User get android contacts which are registered should return the correct amount of users (3): BowlingManagerAPI Coverage Results" MODIFIED="1416932657407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_users_should_respond_to_a_get_with_all_users__BowlingManagerAPI.coverage" NAME="listing users should respond to a get with all users: BowlingManagerAPI Coverage Results" MODIFIED="1413587729585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_updating_user__BowlingManagerAPI.coverage" NAME="test_updating_user: BowlingManagerAPI Coverage Results" MODIFIED="1412949797279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations_by_event__BowlingManagerAPI.coverage" NAME="test_listing_participations_by_event: BowlingManagerAPI Coverage Results" MODIFIED="1413205660140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@FriendsController__BowlingManagerAPI.coverage" NAME="FriendsController: BowlingManagerAPI Coverage Results" MODIFIED="1416981322723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@_logging_in_a_user__valid_user_credentials__content_type_should_have_an_info__BowlingManagerAPI.coverage" NAME="#logging in a user #valid user credentials #content type should have an info: BowlingManagerAPI Coverage Results" MODIFIED="1415901385073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@Club_fields_is_invali_without_a_club_name__BowlingManagerAPI.coverage" NAME="Club#fields is invali without a club name: BowlingManagerAPI Coverage Results" MODIFIED="1416341048118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends__BowlingManagerAPI.coverage" NAME="listing all friends: BowlingManagerAPI Coverage Results" MODIFIED="1416992981662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_lists_clubs__BowlingManagerAPI.coverage" NAME="test_lists_clubs: BowlingManagerAPI Coverage Results" MODIFIED="1412948497055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends_answer_type_response_content__BowlingManagerAPI.coverage" NAME="listing all friends answer type response content: BowlingManagerAPI Coverage Results" MODIFIED="1416995018434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_parse_string_to_array__BowlingManagerAPI.coverage" NAME="User parse string to array: BowlingManagerAPI Coverage Results" MODIFIED="1416506607067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_creates_new_user_with_valid_data__BowlingManagerAPI.coverage" NAME="test_creates_new_user_with_valid_data: BowlingManagerAPI Coverage Results" MODIFIED="1412959055386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@getting_club_from_the_user_answer_type__BowlingManagerAPI.coverage" NAME="getting club from the user answer type: BowlingManagerAPI Coverage Results" MODIFIED="1417769098291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@getting_club_from_the_user_answer_content_should_respond_with_the_correct_club__BowlingManagerAPI.coverage" NAME="getting club from the user answer content should respond with the correct club: BowlingManagerAPI Coverage Results" MODIFIED="1417770319814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_attribute_should_return_false_for_an_invalid_name__BowlingManagerAPI.coverage" NAME="User#validate attribute should return false for an invalid name: BowlingManagerAPI Coverage Results" MODIFIED="1415978147931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered__BowlingManagerAPI.coverage" NAME="User get android contacts which are registered: BowlingManagerAPI Coverage Results" MODIFIED="1416932711995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_email_and_userName_should_be_true_if_only_one_of_them_is_not_unique__BowlingManagerAPI.coverage" NAME="User#validate email and userName should be true if only one of them is not unique: BowlingManagerAPI Coverage Results" MODIFIED="1415978500000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_email_and_userName__BowlingManagerAPI.coverage" NAME="User#validate email and userName: BowlingManagerAPI Coverage Results" MODIFIED="1415978563961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User__BowlingManagerAPI.coverage" NAME="User: BowlingManagerAPI Coverage Results" MODIFIED="1416933325139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_friends_string_to_array_should_parse_an_array_from_a_string__BowlingManagerAPI.coverage" NAME="listing friends string to array should parse an array from a string: BowlingManagerAPI Coverage Results" MODIFIED="1416506371051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered_should_parse_an_array_with_phone_numbers_from_a_string__BowlingManagerAPI.coverage" NAME="User get android contacts which are registered should parse an array with phone numbers from a string: BowlingManagerAPI Coverage Results" MODIFIED="1416932705432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@All_tests_in_test__BowlingManagerAPI.coverage" NAME="All tests in test: BowlingManagerAPI Coverage Results" MODIFIED="1412986031580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@Participation__BowlingManagerAPI.coverage" NAME="Participation: BowlingManagerAPI Coverage Results" MODIFIED="1416341261026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_unsuccessful_update_on_short_userName__BowlingManagerAPI.coverage" NAME="test_unsuccessful_update_on_short_userName: BowlingManagerAPI Coverage Results" MODIFIED="1412950662873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@checking_club_validity_user_with_valid_data_should_return_an_error_should_respond_with_unprocessable_entity__BowlingManagerAPI.coverage" NAME="checking club validity user with valid data should return an error should respond with unprocessable entity: BowlingManagerAPI Coverage Results" MODIFIED="1416341097463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@Development__BowlingManagerAPI.coverage" NAME="Development: BowlingManagerAPI Coverage Results" MODIFIED="1412867090128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered_should_return_the_correct_amount_of_users__3___BowlingManagerAPI.coverage" NAME="User get android contacts which are registered should return the correct amount of users (3): BowlingManagerAPI Coverage Results" MODIFIED="1416932657407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_users_should_respond_to_a_get_with_all_users__BowlingManagerAPI.coverage" NAME="listing users should respond to a get with all users: BowlingManagerAPI Coverage Results" MODIFIED="1413587729585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@All_tests_in_integration__BowlingManagerAPI.coverage" NAME="All tests in integration: BowlingManagerAPI Coverage Results" MODIFIED="1413471278716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_updating_user__BowlingManagerAPI.coverage" NAME="test_updating_user: BowlingManagerAPI Coverage Results" MODIFIED="1412949797279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@adding_friends_to_a_club__BowlingManagerAPI.coverage" NAME="adding friends to a club: BowlingManagerAPI Coverage Results" MODIFIED="1417590386364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@creating_users__creating_user_with_valid_data_should_succeed__answer_content__BowlingManagerAPI__1_.coverage" NAME="creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1) Coverage Results" MODIFIED="1417770710958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_email_and_userName_should_return_an_error_if_userName_and_email_are_not_unique__BowlingManagerAPI.coverage" NAME="User#validate email and userName should return an error if userName and email are not unique: BowlingManagerAPI Coverage Results" MODIFIED="1416933032732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations_by_event__BowlingManagerAPI.coverage" NAME="test_listing_participations_by_event: BowlingManagerAPI Coverage Results" MODIFIED="1413205660140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@FriendsController__BowlingManagerAPI.coverage" NAME="FriendsController: BowlingManagerAPI Coverage Results" MODIFIED="1416981322723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_attribute__BowlingManagerAPI.coverage" NAME="User#validate attribute: BowlingManagerAPI Coverage Results" MODIFIED="1415978234398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@_logging_in_a_user__valid_user_credentials__content_type_should_have_an_info__BowlingManagerAPI.coverage" NAME="#logging in a user #valid user credentials #content type should have an info: BowlingManagerAPI Coverage Results" MODIFIED="1415901385073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@adding_friends_to_a_club__BowlingManagerAPI.coverage" NAME="adding friends to a club: BowlingManagerAPI Coverage Results" MODIFIED="1417590386364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_delete_clubs__BowlingManagerAPI.coverage" NAME="test_delete_clubs: BowlingManagerAPI Coverage Results" MODIFIED="1412975738846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@Club_fields_is_invali_without_a_club_name__BowlingManagerAPI.coverage" NAME="Club#fields is invali without a club name: BowlingManagerAPI Coverage Results" MODIFIED="1416341048118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@getting_club_from_the_user_answer_content__BowlingManagerAPI.coverage" NAME="getting club from the user answer content: BowlingManagerAPI Coverage Results" MODIFIED="1417769998540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_validate_attribute__BowlingManagerAPI.coverage" NAME="User#validate attribute: BowlingManagerAPI Coverage Results" MODIFIED="1415978234398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_fields_should_be_invalid_with_an_already_existing_username__BowlingManagerAPI.coverage" NAME="User#fields should be invalid with an already existing username: BowlingManagerAPI Coverage Results" MODIFIED="1415896426180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@getting_club_from_the_user_answer_content__BowlingManagerAPI.coverage" NAME="getting club from the user answer content: BowlingManagerAPI Coverage Results" MODIFIED="1417769998540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_fields_should_not_be_valid_with_an_already_existing_email__BowlingManagerAPI.coverage" NAME="User#fields should not be valid with an already existing email: BowlingManagerAPI Coverage Results" MODIFIED="1415896697413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@All_specs_in_models__BowlingManagerAPI.coverage" NAME="All specs in models: BowlingManagerAPI Coverage Results" MODIFIED="1413585217306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_all_friends__BowlingManagerAPI.coverage" NAME="listing all friends: BowlingManagerAPI Coverage Results" MODIFIED="1416992981662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations__BowlingManagerAPI.coverage" NAME="test_listing_participations: BowlingManagerAPI Coverage Results" MODIFIED="1413203986741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_lists_clubs__BowlingManagerAPI.coverage" NAME="test_lists_clubs: BowlingManagerAPI Coverage Results" MODIFIED="1412948497055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -80,11 +79,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="friends_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/friends_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="450">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clubs_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/clubs_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="1110">
+              <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listing_clubs_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/integration/clubs/listing_clubs_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="930">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1170">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +132,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="315">
               <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
@@ -104,7 +143,7 @@
         <entry file="file://$PROJECT_DIR$/spec/integration/users/creating_users_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1185">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+              <caret line="23" column="51" selection-start-line="22" selection-start-column="11" selection-end-line="23" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -113,8 +152,8 @@
       <file leaf-file-name="get_user_club_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/integration/users/get_user_club_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.031746" vertical-offset="0" max-vertical-offset="600">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.30927834" vertical-offset="0" max-vertical-offset="615">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -123,8 +162,8 @@
       <file leaf-file-name="helpers.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/helpers.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,7 +201,6 @@
         <option value="$PROJECT_DIR$/spec/controllers/friends_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/serializers/user_serializer.rb" />
         <option value="$PROJECT_DIR$/spec/integration/friends/listing_friends_spec.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/test/factories/clubs.rb" />
         <option value="$PROJECT_DIR$/spec/integration/clubs/listing_clubs_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -171,9 +209,10 @@
         <option value="$PROJECT_DIR$/spec/integration/clubs/add_users_to_club_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/clubs_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/spec/integration/users/get_user_club_spec.rb" />
         <option value="$PROJECT_DIR$/spec/helpers.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/integration/users/get_user_club_spec.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -241,7 +280,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -370,7 +409,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,6 +427,9 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec/integration/users" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spec/integration/users" />
       <recent name="$PROJECT_DIR$/test/integration/participations" />
@@ -396,44 +438,7 @@
       <recent name="$PROJECT_DIR$/test/integration/users" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.getting club from the user answer content should respond with the correct club: BowlingManagerAPI">
-    <configuration default="false" name="getting club from the user answer type: BowlingManagerAPI" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="BowlingManagerAPI" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration/users/get_user_club_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="getting club from the user answer type" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1)">
     <configuration default="false" name="getting club from the user answer content should respond with the correct club: BowlingManagerAPI" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="BowlingManagerAPI" />
@@ -459,43 +464,6 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="getting club from the user answer content should respond with the correct club" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="#listing all clubs with filter answer content: BowlingManagerAPI" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="BowlingManagerAPI" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration/clubs/listing_clubs_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="#listing all clubs with filter answer content" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -567,6 +535,80 @@
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration/users/creating_users_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="creating users #creating user with valid data should succeed #answer content" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="creating users #creating user with valid data should succeed #answer type should answer with json: BowlingManagerAPI" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="BowlingManagerAPI" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration/users/get_user_club_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="creating users #creating user with valid data should succeed #answer type should answer with json" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="BowlingManagerAPI" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration/users/get_user_club_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="creating users #creating user with valid data should succeed #answer content" />
@@ -759,19 +801,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.getting club from the user answer type: BowlingManagerAPI" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content should respond with the correct club: BowlingManagerAPI" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.#listing all clubs with filter answer content: BowlingManagerAPI" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content: BowlingManagerAPI" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content should respond with the correct club: BowlingManagerAPI" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content: BowlingManagerAPI" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer type should answer with json: BowlingManagerAPI" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content should respond with the correct club: BowlingManagerAPI" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content: BowlingManagerAPI" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.#listing all clubs with filter answer content: BowlingManagerAPI" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.getting club from the user answer type: BowlingManagerAPI" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1)" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer type should answer with json: BowlingManagerAPI" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content: BowlingManagerAPI" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.getting club from the user answer content should respond with the correct club: BowlingManagerAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -852,29 +894,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1436" height="877" extended-state="6" />
+    <frame x="4" y="23" width="1436" height="877" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4784217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5080148" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36744758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37361282" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968128" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2446198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49938348" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2482066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49938348" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292232" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49938348" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -995,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08571429" vertical-offset="0" max-vertical-offset="350">
           <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="451">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1140,7 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <caret line="6" column="99" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,7 +1185,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1172,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="720">
           <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1180,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,23 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72796935" vertical-offset="0" max-vertical-offset="783">
           <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/friends_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="450">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="495">
-          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,38 +1241,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68733156" vertical-offset="90" max-vertical-offset="705">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/clubs_controller.rb">
+    <entry file="file://$PROJECT_DIR$/spec/integration/users/creating_users_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80862534" vertical-offset="195" max-vertical-offset="1110">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1185">
+          <caret line="23" column="51" selection-start-line="22" selection-start-column="11" selection-end-line="23" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/clubs/listing_clubs_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7460318" vertical-offset="0" max-vertical-offset="930">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration/users/creating_users_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1185">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1170">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1272,18 +1276,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="495">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/friends_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="450">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/clubs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="1110">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/clubs/listing_clubs_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="930">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/integration/users/get_user_club_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.031746" vertical-offset="0" max-vertical-offset="600">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.30927834" vertical-offset="0" max-vertical-offset="615">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
         </state>
       </provider>

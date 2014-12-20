@@ -7,6 +7,19 @@ class ClubsController < ApplicationController
     render json: clubs, status: 200
   end
 
+  def getMembers
+    club_name = params[:club][:name]
+    
+    club = Club.find_by_name(club_name)
+    
+    if !club.nil?
+      users = club.users
+      render json: users, status: 200
+    else
+      render json: { error: { info: 'Could not find any members of this club!' } }, status: 422
+    end
+  end
+
   def create
     club = Club.new(club_params)
     if club.save
@@ -19,12 +32,25 @@ class ClubsController < ApplicationController
   def destroy
     begin
       club = Club.find(params[:id])
+
       club.destroy!
       render nothing: true, status: 204
     rescue ActiveRecord::RecordNotFound
       error = { error: { club: 'club not found' } }
       render json: error.to_json, status: 422
     end
+  end
+
+  def delete_by_name
+      club_name = params[:club][:name]
+      club = Club.find_by_name(club_name)
+      print Club.count
+
+      club.destroy!
+      render nothing: true, status: 204
+    rescue ActiveRecord::RecordNotFound
+      error = { error: { club: 'club not found' } }
+      render json: error.to_json, status: 422
   end
 
   def update

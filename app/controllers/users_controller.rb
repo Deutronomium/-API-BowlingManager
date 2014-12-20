@@ -11,7 +11,9 @@ class UsersController < ApplicationController
     userParams = params[:user]
     userName = userParams[:userName]
     user = User.find_by_userName(userName)
+    print user.id
     club = Club.find(user.club_id)
+    print club.id
     render json: club, status: 200
   end
 
