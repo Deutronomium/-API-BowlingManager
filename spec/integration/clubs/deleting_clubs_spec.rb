@@ -12,24 +12,6 @@ describe 'deleting clubs' do
         response.status.should eq(204)
       end
     end
-
-    context 'deling by name' do
-      it 'should respond without content' do
-        post 'clubs/delete_by_name',
-            {
-              club: {
-                name: 'TestClub' 
-              }
-            }.to_json,
-            {
-              'Accept' => 'application/json',
-              'Content-Type' => 'application/json'
-            }
-
-        response.status.should eq(204)
-      end
-    end
-        
   end
 
   context 'deleting a club which is not in the database' do

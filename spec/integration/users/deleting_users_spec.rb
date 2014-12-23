@@ -1,13 +1,34 @@
 require 'spec_helper'
 
 describe 'deleting users' do
-  let(:user) { FactoryGirl.create(:user) }
-
   context 'deleting an existing user' do
-    it 'should respond with status code 204' do
-      delete "/users/#{user.id}"
+    before do
+      @user = FactoryGirl.create(:user, userName: 'TestUser')
+    end
 
-      response.status.should eq(204)
+    context 'deleing user by id' do
+      it 'should respond with status code 204' do
+        delete "/users/#{@user.id}"
+
+        response.status.should eq(204)
+      end
+    end
+
+    context 'deleting user by name' do
+      it 'should respond with status code 204' do
+        post 'users/delete_by_name',
+            {
+              user: {
+                userName: 'TestUser'
+              }
+            }.to_json,
+            {
+              'Accept' => 'application/json',
+              'Content-Type' => 'application/json'
+            }
+
+        response.status.should eq(204)
+      end
     end
   end
 

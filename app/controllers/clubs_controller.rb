@@ -42,11 +42,10 @@ class ClubsController < ApplicationController
   end
 
   def delete_by_name
-      club_name = params[:club][:name]
-      club = Club.find_by_name(club_name)
-      print Club.count
+      user_name = params[:club][:name]
+      user = User.find_by_userName(user_name)
 
-      club.destroy!
+      user.destroy!
       render nothing: true, status: 204
     rescue ActiveRecord::RecordNotFound
       error = { error: { club: 'club not found' } }
