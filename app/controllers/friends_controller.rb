@@ -1,5 +1,5 @@
 class FriendsController < ApplicationController
-  def registeredFriends
+  def getRegisteredFriends
     friend =  params[:friends]
     phone_numbers = friend[:phone_numbers]
     matching_users = friend_phone_numbers(phone_numbers)
@@ -9,6 +9,10 @@ class FriendsController < ApplicationController
 
   def friend_params
     params.require(:friends).permit(:phone_numbers => [])
+  end
+
+  def remove_friend_params
+    params.require(:friends).permit(:user_name, :club_name)
   end
 
   def friend_phone_numbers(phone_numbers)
@@ -21,5 +25,21 @@ class FriendsController < ApplicationController
     end
 
     @matching_users
+  end
+
+  def removeFriendFromClub
+    friends = params[:friends]
+    user_name = friends[:user_name]
+    club_name = friends[:club_name]
+
+    club = Club.find_by_name(club_name)
+    user = User.find_by_userName(user_name)
+
+    if user 
+      club.users.delete(user)
+      render json: { success: { message: 'Friend successfully removed from club!'} }, status: 200
+    else
+      render json: { error: { message: 'Could not find the member!' } }, status: 422
+    end
   end
 end

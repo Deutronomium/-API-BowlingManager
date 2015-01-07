@@ -11,20 +11,8 @@ class UsersController < ApplicationController
     userParams = params[:user]
     userName = userParams[:userName]
     user = User.find_by_userName(userName)
-    print user.id
     club = Club.find(user.club_id)
-    print club.id
     render json: club, status: 200
-  end
-
-  def delete_by_name
-    user_name = params[:user][:userName]
-    user = User.find_by_userName(user_name)
-    user.destroy
-    render nothing: true, status: 204
-  rescue ActiveRecord::RecordNotFound
-    error = { error: { info: 'User not found' } } 
-    render json error.to_json, status: 422
   end
 
   def create

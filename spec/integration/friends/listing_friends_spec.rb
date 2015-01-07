@@ -8,7 +8,7 @@ describe 'listing all friends' do
       FactoryGirl.create(:user, phone_number: '33333')
       FactoryGirl.create(:user, phone_number: '44444')
       FactoryGirl.create(:user, phone_number: '55555')
-      post '/friends/registeredFriends',
+      post '/friends/getRegisteredFriends',
            { friends: {
                phone_numbers: %w(11111 22222 44444)
            } }.to_json,

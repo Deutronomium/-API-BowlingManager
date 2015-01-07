@@ -13,23 +13,6 @@ describe 'deleting users' do
         response.status.should eq(204)
       end
     end
-
-    context 'deleting user by name' do
-      it 'should respond with status code 204' do
-        post 'users/delete_by_name',
-            {
-              user: {
-                userName: 'TestUser'
-              }
-            }.to_json,
-            {
-              'Accept' => 'application/json',
-              'Content-Type' => 'application/json'
-            }
-
-        response.status.should eq(204)
-      end
-    end
   end
 
   context 'deleting a non existant user' do
