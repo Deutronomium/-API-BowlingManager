@@ -27,12 +27,10 @@ describe 'creating users' do
     context '#answer type' do
       it 'should answer with a 201 status code' do
         response.status.should eq(201)
-        #expect(response.status).to eq(201)
       end
 
       it 'should answer with json' do
         response.content_type.should eq(Mime::JSON)
-        #expect(response.content_type).to eq(Mime::JSON)
       end
     end
 

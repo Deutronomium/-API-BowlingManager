@@ -6,4 +6,6 @@ class Participation < ActiveRecord::Base
   #Associations
   belongs_to :user
   belongs_to :event
+
+  scope :participant, -> { where(accept: true) }
 end
