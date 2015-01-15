@@ -27,7 +27,9 @@ describe 'creating clubs' do
   context '#create club with invalid data should report errors' do
     before do
       post ('/clubs'),
-           { club: { name: nil }}.to_json,
+           { club: {
+              name: nil 
+           }}.to_json,
            { 'Accept' => 'application/json',
               'Content-Type' => 'application/json' }
     end

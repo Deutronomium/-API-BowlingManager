@@ -12,7 +12,7 @@ describe 'checking user_validity' do
                userName: 'NotUnique',
                email: 'NotUnique',
                password: 'test123',
-               password: 'test123'
+               password_confirmation: 'test123'
            } }.to_json,
            {
                'Accept' => 'application/json',

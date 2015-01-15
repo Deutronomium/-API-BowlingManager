@@ -8,4 +8,5 @@ class Participation < ActiveRecord::Base
   belongs_to :event
 
   scope :participant, -> { where(accept: true) }
+  scope :unanswered, -> { where(accept: nil) }
 end
