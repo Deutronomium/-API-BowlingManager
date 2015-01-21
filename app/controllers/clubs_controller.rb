@@ -73,9 +73,11 @@ class ClubsController < ApplicationController
   end
 
   def addMembers
-    add_members = params[:add_members]
-    club = Club.find_by_name(add_members[:club])
-    members = add_members[:members]
+    club_params = params[:club]
+
+    club = Club.find_by_name(club_params[:name])
+    members = club_params[:members]
+    
     members.each do |member|
       user = User.find_by_phone_number(member)
       user.update_attribute(:club_id, club.id)
@@ -89,6 +91,6 @@ class ClubsController < ApplicationController
   end
 
   def add_members_params
-    params.require(:add_members).permit(:club, :members => [])
+    params.require(:club).permit(:name, :members => [])
   end
 end

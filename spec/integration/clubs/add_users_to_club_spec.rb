@@ -12,8 +12,8 @@ describe 'adding friends to a club' do
 
     post '/clubs/add_members',
          {
-             add_members: {
-                 club: 'Test',
+             club: {
+                 name: 'Test',
                  members: %w(11111 22222 44444)
              }
          }.to_json,

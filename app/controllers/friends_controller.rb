@@ -15,18 +15,6 @@ class FriendsController < ApplicationController
     params.require(:friends).permit(:user_name, :club_name)
   end
 
-  def friend_phone_numbers(phone_numbers)
-    @matching_users = []
-    phone_numbers.each do |phone_number|
-      user = User.find_by_phone_number(phone_number)
-      if user
-        @matching_users << user
-      end
-    end
-
-    @matching_users
-  end
-
   def removeFriendFromClub
     friends = params[:friends]
     user_name = friends[:user_name]
@@ -41,5 +29,17 @@ class FriendsController < ApplicationController
     else
       render json: { error: { message: 'Could not find the member!' } }, status: 422
     end
+  end
+
+  def friend_phone_numbers(phone_numbers)
+    @matching_users = []
+    phone_numbers.each do |phone_number|
+      user = User.find_by_phone_number(phone_number)
+      if user
+        @matching_users << user
+      end
+    end
+
+    @matching_users
   end
 end
