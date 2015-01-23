@@ -46,8 +46,23 @@ class EventsController < ApplicationController
     end
   end
 
+  def get_events_by_club
+      club = Club.find_by_id(get_events_by_club_params[:club_id])
+      if !club.nil?
+        events = club.events
+        render json: events, status: 200
+      else
+        error = { error: { club: 'club not found'} }
+        render json: error.to_json, status: 422
+      end
+  end
+
   def event_params
     params.require(:event).permit(:name, :club_id, :date)
+  end
+
+  def get_events_by_club_params
+    params.require(:event).permit(:club_id)
   end
 
 end
