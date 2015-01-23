@@ -9,7 +9,16 @@ class EventsController < ApplicationController
   end
 
   def create
-    event = Event.create(event_params)
+    event_name = event_params[:name]
+    event_date = DateTime.parse(event_params[:date])
+    club_id = event_params[:club_id]
+    club = Club.find_by_id(club_id)
+    event = Event.create(name: event_name, date: event_date.to_time, club_id: club_id)
+    if !club.nil?
+      club.users.each do |user|
+        Participation.create!(event: event, user:user)
+      end
+    end
     if event.save
       render json: event, status: 201, location: event
     else

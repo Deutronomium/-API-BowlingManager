@@ -4,10 +4,10 @@ describe '#logging in a user' do
 
   context '#valid user credentials' do
     before do
-      FactoryGirl.create(:user, email: 'patrick.engelkes@gmail.com')
+      FactoryGirl.create(:user, email: 'Test', password: 'test123', password_confirmation: 'test123')
       post '/sessions',
            { session: {
-               email: 'patrick.engelkes@gmail.com',
+               email: 'Test',
                password: 'test123'
            } }.to_json,
            {

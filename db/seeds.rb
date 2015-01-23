@@ -2,7 +2,7 @@
 @testClub = Club.create!(name: "TestClub");
 
 @patrick = User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes',
-                        email: 'patrick.engelkes@gmail.com', password: 'test123', password_confirmation: 'test123',
+                        email: 'Test', password: 'test123', password_confirmation: 'test123',
                         phone_number: '0111111111', club_id: @testClub.id)
 
 User.create!(userName: 'Test1', firstName: 'Test1', lastName: 'Test1', phone_number: '11111', email: 'Test1',

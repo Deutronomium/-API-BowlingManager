@@ -2,14 +2,16 @@ require 'spec_helper'
 
 describe '#creating events' do
   context 'creating event with valid data' do
-    let(:club) { FactoryGirl.create(:club) }
 
     before do
+      @club = FactoryGirl.create(:club, name: 'TestClub')
+      FactoryGirl.create(:user, club_id: @club.id)
+      FactoryGirl.create(:user, club_id: @club.id)
       post ('/events'),
            { event: {
                name: 'Bowling',
-               club_id: club.id,
-               date: DateTime.new(2014, 4, 4)
+               club_id: @club.id,
+               date: "2015-01-08T23:55"
            }}.to_json,
            {
                'Accept' => 'application/json',
@@ -31,6 +33,13 @@ describe '#creating events' do
       it 'should answer with the correct location' do
         event = json(response.body)
         response.location.should eq(event_url(event[:id]))
+      end
+    end
+
+    context 'creating participations' do
+      it 'should create participations for all club users' do 
+        event = Event.find_by_name('Bowling')
+        event.participations.count.should eq(2)
       end
     end
   end
