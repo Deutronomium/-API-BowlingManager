@@ -11,8 +11,20 @@ class UsersController < ApplicationController
     userParams = params[:user]
     userName = userParams[:userName]
     user = User.find_by_userName(userName)
-    club = Club.find(user.club_id)
-    render json: club, status: 200
+    if user.club_id?
+      club = Club.find(user.club_id)
+      render json: club, status: 200
+    else
+      error = { error: {
+        message: 'User has no club yet.'
+      } }
+      render json: error, status: 450
+    end
+  rescue ActiveRecord::RecordNotFound
+    error = { error: {
+        message: 'Club does not exist'
+    } }
+    render json: error, status: 422
   end
 
   def create
