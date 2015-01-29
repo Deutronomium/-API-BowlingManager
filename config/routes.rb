@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post 'clubs/get_members_by_club', to: 'clubs#getMembers'
 
   post 'events/get_events_by_club', to: 'events#get_events_by_club'
+  post 'events/get_participants', to: 'events#get_participants'
 
   post 'friends/getRegisteredFriends', to: 'friends#getRegisteredFriends'
   post 'friends/removeFriendFromClub', to: 'friends#removeFriendFromClub'

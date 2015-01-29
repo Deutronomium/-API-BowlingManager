@@ -9,4 +9,5 @@ class Participation < ActiveRecord::Base
 
   scope :participant, -> { where(accept: true) }
   scope :unanswered, -> { where(accept: nil) }
+  scope :declined, -> { where(accept: false) }
 end

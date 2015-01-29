@@ -57,12 +57,26 @@ class EventsController < ApplicationController
       end
   end
 
+  def get_participants
+    event_id = get_participants_params[:event_id]
+    event = Event.find(event_id)
+    participants = event.participations.merge(Participation.participant)
+    render json: participants, status: 200
+  rescue ActiveRecord::RecordNotFound
+    error = {error: {message: 'Event not found'}}
+    render json: error, status: 404
+  end
+
   def event_params
     params.require(:event).permit(:name, :club_id, :date)
   end
 
   def get_events_by_club_params
     params.require(:event).permit(:club_id)
+  end
+
+  def get_participants_params
+    params.require(:event).permit(:event_id)
   end
 
 end
