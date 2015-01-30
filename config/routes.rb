@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   post 'users/user_club', to: 'users#user_club'
 
   post 'clubs/validity', to: 'clubs#check'
-  post 'clubs/add_members', to: 'clubs#addMembers'
-  post 'clubs/get_members_by_club', to: 'clubs#getMembers'
+  post 'clubs/add_members', to: 'clubs#add_members'
+  post 'clubs/get_members_by_club', to: 'clubs#get_members'
 
   post 'events/get_events_by_club', to: 'events#get_events_by_club'
   post 'events/get_participants', to: 'events#get_participants'

@@ -6,7 +6,7 @@ describe '#listing events' do
     @firstClub = FactoryGirl.create(:club)
     @secondClub = FactoryGirl.create(:club, name: 'secondClub')
 
-    @firstEvent = FactoryGirl.create(:event, club: @firstClub)
+    @first_event = FactoryGirl.create(:event, club: @firstClub)
 
     FactoryGirl.create(:event, club: @secondClub)
     FactoryGirl.create(:event, club: @secondClub)
@@ -34,7 +34,7 @@ describe '#listing events' do
 
       it 'should return the correct data for the events' do
         event = events.first
-        event[:id].should eq(@firstEvent.id)
+        event[:id].should eq(@first_event.id)
       end
     end
   end

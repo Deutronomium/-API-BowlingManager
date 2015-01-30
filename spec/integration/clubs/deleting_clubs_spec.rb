@@ -1,33 +1,32 @@
 require 'spec_helper'
 
-describe 'deleting clubs' do
-  context 'deleting a club which can be found' do
-    before do
+describe 'Deleting a club' do
+  context 'with valid data' do
+    it 'should change the club count by -1' do
       @club = FactoryGirl.create(:club, name: 'TestClub')
-    end
 
-    context 'deleting by id' do
-      it 'should respond without content' do
-        delete ("clubs/#{@club.id}")
-        response.status.should eq(204)
-      end
+      delete ("clubs/#{@club.id}")
+
+      response.status.should eq(204)
+
+      Club.count.should eq(0)
     end
   end
 
-  context 'deleting a club which is not in the database' do
-    before do
+  context 'which is not in the database' do
+    it 'should not reduce the club count' do
       @club = FactoryGirl.create(:club, name: 'TestClub')
-      delete ("clubs/123")
-    end
+      club_count = Club.count
+      delete ('clubs/123')
 
-    it 'should respond with unprocessable entity' do
       response.status.should eq(422)
-    end
 
-    it 'should respond with a club error' do
       error = json(response.body)[:error]
       error[:club].should_not be nil
+
+      Club.count.should eq(club_count)
     end
+
   end
 
 end

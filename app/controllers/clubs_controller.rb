@@ -7,16 +7,16 @@ class ClubsController < ApplicationController
     render json: clubs, status: 200
   end
 
-  def getMembers
+  def get_members
     club_name = params[:club][:name]
-    
+
     club = Club.find_by_name(club_name)
-    
-    if !club.nil?
+
+    if club.nil?
+      render json: {error: {info: 'Could not find any members of this club!'}}, status: 422
+    else
       users = club.users
       render json: users, status: 200
-    else
-      render json: { error: { info: 'Could not find any members of this club!' } }, status: 422
     end
   end
 
@@ -36,20 +36,20 @@ class ClubsController < ApplicationController
       club.destroy!
       render nothing: true, status: 204
     rescue ActiveRecord::RecordNotFound
-      error = { error: { club: 'club not found' } }
+      error = {error: {club: 'club not found'}}
       render json: error.to_json, status: 422
     end
   end
 
   def delete_by_name
-      user_name = params[:club][:name]
-      user = User.find_by_userName(user_name)
+    user_name = params[:club][:name]
+    user = User.find_by_userName(user_name)
 
-      user.destroy!
-      render nothing: true, status: 204
-    rescue ActiveRecord::RecordNotFound
-      error = { error: { club: 'club not found' } }
-      render json: error.to_json, status: 422
+    user.destroy!
+    render nothing: true, status: 204
+  rescue ActiveRecord::RecordNotFound
+    error = {error: {club: 'club not found'}}
+    render json: error.to_json, status: 422
   end
 
   def update
@@ -63,28 +63,34 @@ class ClubsController < ApplicationController
 
   def check
     club = Club.new(club_params)
-    if !club.attribute_valid?('name')
-      render json: {
-                 name: 'This clubname already exists. Please choose another one!'
-             }, status: 422
-    else
+    if club.attribute_valid?('name')
       render json: club, status: 200
+    else
+      render json: {
+                   name: 'This clubname already exists. Please choose another one!'
+               }, status: 400
     end
   end
 
-  def addMembers
+  def add_members
     club_params = params[:club]
 
     club = Club.find_by_name(club_params[:name])
     members = club_params[:members]
-    
-    members.each do |member|
-      user = User.find_by_phone_number(member)
-      user.update_attribute(:club_id, club.id)
-    end
 
-    render nothing: true, status: 200
+    if club.nil?
+      error = {error: {message: 'Could not find given club!'}}
+      render json: error, status: 404
+    else
+      members.each do |member|
+        user = User.find_by_phone_number(member)
+        user.update_attribute(:club_id, club.id)
+      end
+
+      render nothing: true, status: 200
+    end
   end
+
 
   def club_params
     params.require(:club).permit(:name)

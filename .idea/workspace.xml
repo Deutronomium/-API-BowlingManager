@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6ffc9e3-a33c-4e38-b658-5c90f3fe3ba6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20150127194925_remove_accept_from_event_and_add_to_participations.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/integration/events/get_participants_spec.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/integration/friends/listing_friends_spec.rb" afterPath="" />
+    <list default="true" id="c6ffc9e3-a33c-4e38-b658-5c90f3fe3ba6" name="Default" comment="Get Participants from an Event.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" afterPath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/events_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/events_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers.rb" afterPath="$PROJECT_DIR$/spec/helpers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/participation.rb" afterPath="$PROJECT_DIR$/app/models/participation.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/events/get_participants_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/events/get_participants_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BowlingManagerAPI.iws" />
@@ -43,10 +34,11 @@
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@_listing_all_clubs_with_filter_answer_content__BowlingManagerAPI.coverage" NAME="#listing all clubs with filter answer content: BowlingManagerAPI Coverage Results" MODIFIED="1417769767305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered_should_parse_an_array_with_phone_numbers_from_a_string__BowlingManagerAPI.coverage" NAME="User get android contacts which are registered should parse an array with phone numbers from a string: BowlingManagerAPI Coverage Results" MODIFIED="1416932705432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_unsuccessful_update_on_short_userName__BowlingManagerAPI.coverage" NAME="test_unsuccessful_update_on_short_userName: BowlingManagerAPI Coverage Results" MODIFIED="1412950662873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
-    <SUITE FILE_PATH="coverage/BowlingManagerAPI@get_participants_from_an_event__BowlingManagerAPI.coverage" NAME="get participants from an event: BowlingManagerAPI Coverage Results" MODIFIED="1422573574160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@get_participants_from_an_event__BowlingManagerAPI.coverage" NAME="get participants from an event: BowlingManagerAPI Coverage Results" MODIFIED="1422573700964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@User_get_android_contacts_which_are_registered_should_return_the_correct_amount_of_users__3___BowlingManagerAPI.coverage" NAME="User get android contacts which are registered should return the correct amount of users (3): BowlingManagerAPI Coverage Results" MODIFIED="1416932657407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@listing_users_should_respond_to_a_get_with_all_users__BowlingManagerAPI.coverage" NAME="listing users should respond to a get with all users: BowlingManagerAPI Coverage Results" MODIFIED="1413587729585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_updating_user__BowlingManagerAPI.coverage" NAME="test_updating_user: BowlingManagerAPI Coverage Results" MODIFIED="1412949797279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
+    <SUITE FILE_PATH="coverage/BowlingManagerAPI@Getting_participants_from_an_event__BowlingManagerAPI.coverage" NAME="Getting participants from an event: BowlingManagerAPI Coverage Results" MODIFIED="1422573711690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@test_listing_participations_by_event__BowlingManagerAPI.coverage" NAME="test_listing_participations_by_event: BowlingManagerAPI Coverage Results" MODIFIED="1413205660140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@FriendsController__BowlingManagerAPI.coverage" NAME="FriendsController: BowlingManagerAPI Coverage Results" MODIFIED="1416981322723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
     <SUITE FILE_PATH="coverage/BowlingManagerAPI@_logging_in_a_user__valid_user_credentials__content_type_should_have_an_info__BowlingManagerAPI.coverage" NAME="#logging in a user #valid user credentials #content type should have an info: BowlingManagerAPI Coverage Results" MODIFIED="1415901385073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BowlingManagerAPI" />
@@ -116,8 +108,8 @@
       <file leaf-file-name="get_participants_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/integration/events/get_participants_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2113402" vertical-offset="0" max-vertical-offset="885">
-              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+            <state vertical-scroll-proportion="-0.8803419" vertical-offset="339" max-vertical-offset="885">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -156,7 +148,7 @@
       <file leaf-file-name="spec_helper.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
               <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
               <folding />
             </state>
@@ -242,8 +234,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/helpers.rb" />
-        <option value="$PROJECT_DIR$/spec/integration/events/get_participants_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/integration/events/get_participants_spec.rb" />
       </list>
     </option>
   </component>
@@ -258,10 +250,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
+    <option name="x" value="4" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1436" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -509,44 +501,7 @@
       <recent name="$PROJECT_DIR$/test/integration/users" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.get participants from an event: BowlingManagerAPI">
-    <configuration default="false" name="creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="BowlingManagerAPI" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration/users/get_user_club_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="creating users #creating user with valid data should succeed #answer content" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.Getting participants from an event: BowlingManagerAPI">
     <configuration default="false" name="get participants from an event listing all participants of a valid event: BowlingManagerAPI" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="BowlingManagerAPI" />
@@ -668,6 +623,43 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="get participants from an event" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Getting participants from an event: BowlingManagerAPI" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="BowlingManagerAPI" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration/events/get_participants_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Getting participants from an event" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -857,19 +849,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1)" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.get participants from an event listing all participants of a valid event: BowlingManagerAPI" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.shared_examples_for_api_posts" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'api_post_spec': BowlingManagerAPI" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.get participants from an event: BowlingManagerAPI" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.get participants from an event listing all participants of a valid event: BowlingManagerAPI" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.shared_examples_for_api_posts" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.Run spec 'api_post_spec': BowlingManagerAPI" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.get participants from an event: BowlingManagerAPI" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Getting participants from an event: BowlingManagerAPI" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.get participants from an event: BowlingManagerAPI" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'api_post_spec': BowlingManagerAPI" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.shared_examples_for_api_posts" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.get participants from an event listing all participants of a valid event: BowlingManagerAPI" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.creating users #creating user with valid data should succeed #answer content: BowlingManagerAPI (1)" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Getting participants from an event: BowlingManagerAPI" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.get participants from an event: BowlingManagerAPI" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Run spec 'api_post_spec': BowlingManagerAPI" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.shared_examples_for_api_posts" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.get participants from an event listing all participants of a valid event: BowlingManagerAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -926,7 +918,13 @@
       <option name="project" value="LOCAL" />
       <updated>1415913166807</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Get Participants from an Event.">
+      <created>1422573626914</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1422573626914</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -950,26 +948,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="4" y="23" width="1436" height="877" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36590436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4189189" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36590436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5153453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282981" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36590436" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292232" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920128" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16453674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22166428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41476092" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292232" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -987,6 +985,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -996,7 +995,9 @@
     <MESSAGE value="Validate uniqueness for email and userName" />
     <MESSAGE value="Add phone_number to users. Clear DB after each spec." />
     <MESSAGE value="Add phone_number migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add phone_number migration" />
+    <MESSAGE value="Get Participants from an Event." />
+    <option name="LAST_COMMIT_MESSAGE" value="Get Participants from an Event." />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1377,8 +1378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/integration/events/get_participants_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2113402" vertical-offset="0" max-vertical-offset="885">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        <state vertical-scroll-proportion="-0.8803419" vertical-offset="339" max-vertical-offset="885">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
         </state>
       </provider>
