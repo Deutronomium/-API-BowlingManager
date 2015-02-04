@@ -20,7 +20,7 @@ describe 'adding friends to a club' do
                    members: %w(11111 22222 44444)
                }
            }.to_json,
-           request_heders
+           request_headers
 
       response.should be_success
 
@@ -37,7 +37,7 @@ describe 'adding friends to a club' do
                    members: %w(66666 77777 88888)
                }
            }.to_json,
-           request_heders
+           request_headers
 
       response.status.should eq(404)
 

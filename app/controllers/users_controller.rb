@@ -32,7 +32,8 @@ class UsersController < ApplicationController
     if user.save
       render json: user, status: 201, location: user
     else
-      render json: user.errors, status: 422
+      error = { error: { message: 'Could not create user'} }
+      render json: error, status: 422
     end
   end
 
@@ -60,19 +61,15 @@ class UsersController < ApplicationController
 
   def check
     user = User.new(user_params)
-    if !user.email_and_user_name_valid?
-      print 'test'
-      render json: {
-                 error: 'Username and email already exist. Please choose a different name and email!'
-             }, status: 422
-    elsif !user.attribute_valid?('userName')
-      render json: {
-                 userName: 'This username already exists. Please choose another one!'
-             }, status: 422
-    elsif !user.attribute_valid?('email')
-      render json: {
-                 email: 'This email already exists. Please choose another one!'
-             }, status: 422
+    if !user.attribute_valid?('userName') && user.attribute_valid?('email')
+      error = { error: { message: UserErrors::USER } }
+      render json: error, status: 451
+    elsif !user.attribute_valid?('email') && user.attribute_valid?('userName')
+      error = { error: { message: UserErrors::EMAIL} }
+      render json: error, status: 452
+    elsif !user.email_and_user_name_valid?
+      error = { error: { message:  UserErrors::USER_AND_EMAIL} }
+      render json: error, status: 450
     else
       render json: user, status: 200
     end

@@ -1,16 +1,20 @@
 #create clubs
-@testClub = Club.create!(name: "TestClub");
+@test_club = Club.create!(name: "TestClub");
 
-@patrick = User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes',
+@user = User.create!(userName: 'Deutro', firstName: 'Patrick', lastName: 'Engelkes',
                         email: 'Test', password: 'test123', password_confirmation: 'test123',
-                        phone_number: '0111111111', club_id: @testClub.id)
+                        phone_number: '0111111111', club_id: @test_club.id)
+
+@event = Event.create!(name: 'Event', club_id: @test_club.id, date: Date.current)
+
+Participation.create!(user_id: @user.id, event_id: @event.id, accept:true)
 
 User.create!(userName: 'Test1', firstName: 'Test1', lastName: 'Test1', phone_number: '11111', email: 'Test1',
-              password: 'test', password_confirmation: 'test', club_id: @testClub.id)
+              password: 'test', password_confirmation: 'test', club_id: @test_club.id)
 User.create!(userName: 'Test2', firstName: 'Test2', lastName: 'Test2', phone_number: '22222', email: 'Test2',
-             password: 'test', password_confirmation: 'test', club_id: @testClub.id)
+             password: 'test', password_confirmation: 'test', club_id: @test_club.id)
 User.create!(userName: 'Test3', firstName: 'Test3', lastName: 'Test3', phone_number: '33333', email: 'Test3',
-             password: 'test', password_confirmation: 'test', club_id: @testClub.id)
+             password: 'test', password_confirmation: 'test', club_id: @test_club.id)
 User.create!(userName: 'Test4', firstName: 'Test4', lastName: 'Test4', phone_number: '44444', email: 'Test4',
              password: 'test', password_confirmation: 'test')
 User.create!(userName: 'Test5', firstName: 'Test5', lastName: 'Test5', phone_number: '55555', email: 'Test5',
@@ -25,3 +29,5 @@ User.create!(userName: 'Test9', firstName: 'Test9', lastName: 'Test9', phone_num
              password: 'test', password_confirmation: 'test')
 User.create!(userName: 'Test10', firstName: 'Test10', lastName: 'Test10', phone_number: '1010101010', email: 'Test10',
              password: 'test', password_confirmation: 'test')
+
+

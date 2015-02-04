@@ -10,7 +10,7 @@ describe 'creating clubs' do
                    name: 'Club'
                }
            }.to_json,
-           request_heders
+           request_headers
 
       response.status.should eq(201)
 
@@ -31,7 +31,7 @@ describe 'creating clubs' do
                    name: nil
                }
            }.to_json,
-           request_heders
+           request_headers
 
       response.status.should eq(422)
 

@@ -12,7 +12,7 @@ describe 'Checking club validity' do
            { club: {
                name: 'NotUnqiue'
            } }.to_json,
-           request_heders
+           request_headers
 
       response.status.should eq(200)
     end
@@ -25,7 +25,7 @@ describe 'Checking club validity' do
            { club: {
                name: 'Test'
            } }.to_json,
-           request_heders
+           request_headers
       response.status.should eq(400)
 
       errors = json(response.body)

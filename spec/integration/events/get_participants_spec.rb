@@ -19,7 +19,7 @@ describe 'Getting participants from an event' do
                    event_id: @first_event.id
                }
            }.to_json,
-           request_heders
+           request_headers
 
       response.content_type.should eq(Mime::JSON)
 
@@ -38,7 +38,7 @@ describe 'Getting participants from an event' do
                    event_id: 5
                }
            }.to_json,
-           request_heders
+           request_headers
 
       response.status.should eq(404)
 

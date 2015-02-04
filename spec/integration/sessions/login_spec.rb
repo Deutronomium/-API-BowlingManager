@@ -2,36 +2,44 @@ require 'spec_helper'
 
 describe '#logging in a user' do
 
-  context '#valid user credentials' do
-    before do
+  context 'with valid user credentials' do
+    it 'should return the user' do
       FactoryGirl.create(:user, userName: 'Deutro', email: 'Test', password: 'test123', password_confirmation: 'test123')
+
       post '/sessions',
-           { session: {
+           {session: {
                email: 'Test',
                password: 'test123'
-           } }.to_json,
+           }}.to_json,
+           request_headers
+
+      response.status.should eq(200)
+
+      response.content_type.should eq(Mime::JSON)
+
+      userJson = json(response.body)
+      user = userJson[:user]
+      user[:userName].should eq('Deutro')
+    end
+  end
+
+  context 'with invalid user credentials' do
+    it 'should return an error message' do
+      post '/sessions',
            {
-               'Accept' => 'application/json',
-               'Content-Type' => 'application/json'
-           }
-    end
+               session: {
+                   email: 'UnknownEmail',
+                   password: 'Invalid'
+               }
+           }.to_json,
+           request_headers
 
-    context '#answer type' do
-      it 'should answer with logged in' do
-        response.status.should eq(201)
-      end
+      response.status.should eq(401)
 
-      it 'should answer with json' do
-        response.content_type.should eq(Mime::JSON)
-      end
-    end
+      response.content_type.should eq(Mime::JSON)
 
-    context '#content type' do
-      it 'should respond with the current user' do
-          userJson = json(response.body)
-          user = userJson[:user]
-          user[:userName].should eq('Deutro')
-      end
+      error = json(response.body)[:error]
+      error[:message].should_not be nil
     end
   end
 end

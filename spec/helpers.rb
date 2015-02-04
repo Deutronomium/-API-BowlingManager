@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Helpers
 
-  def request_heders
+  def request_headers
     return {
         'Accept' => 'application/json',
         'Content-Type' => 'application/json'

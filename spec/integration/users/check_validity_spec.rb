@@ -2,52 +2,98 @@ require 'spec_helper'
 
 describe 'checking user_validity' do
   before do
-    @user = FactoryGirl.create(:user, userName: 'Deutro')
+    @mail = 'MyMail'.downcase
+    @user = 'MyUser'
+    @not_unique_user = 'NotUniqueUser'
+    @not_unique_mail = 'NotUniqueMail'.downcase
+    @user = FactoryGirl.create(:user, userName: @user, email: @mail)
   end
 
-  context 'user with valid data should not return an error' do
-    before do
+  context 'with valid data' do
+    it 'should return the checked user' do
       post '/users/validity',
-           { user: {
-               userName: 'NotUnique',
-               email: 'NotUnique',
+           {user: {
+               userName: @not_unique_user,
+               email: @not_unique_mail,
                password: 'test123',
                password_confirmation: 'test123'
-           } }.to_json,
-           {
-               'Accept' => 'application/json',
-               'Content-Type' => 'application/json'
-           }
-    end
+           }}.to_json,
+           request_headers
 
-    it 'should respond with ok' do
       response.status.should eq(200)
+
+      response.content_type.should eq(Mime::JSON)
+
+      print response.body
+      user = json(response.body)[:user]
+      user[:userName].should eq(@not_unique_user)
+      user[:email].should eq(@not_unique_mail)
     end
   end
 
-  context 'user with invalid data should not be valid' do
-    before do
+  context 'with an existing email and username' do
+    it 'should return status code 450 and an error message' do
       post '/users/validity',
-           { user: {
-               userName: 'Deutro',
-               email: 'testmail@test.de',
-               password: 'test123',
-               password_confirmation: 'test123'
-           } }.to_json,
            {
-               'Accept' => 'application/json',
-               'Content-Type' => 'application/json'
-           }
-    end
+               user: {
+                   userName: @user,
+                   email: @mail,
+                   password: 'test123',
+                   password_confirmation: 'test123'
+               }
+           }.to_json,
+           request_headers
 
-    it 'should respond with unprocessable entity' do
-      response.status.should eq(422)
-    end
+      response.status.should eq(450)
 
-    it 'should respond with errors for name' do
-      errors = json(response.body)
-      errors[:userName].should_not be nil
+      response.content_type.should eq(Mime::JSON)
+
+      error = json(response.body)[:error]
+      error[:message].should eq(UserErrors::USER_AND_EMAIL)
     end
   end
 
+  context 'with an existing username' do
+    it 'should return status code 451 and an error message' do
+      post '/users/validity',
+           {
+               user: {
+                  userName: @user,
+                  email: @not_unique_mail,
+                  password: 'test123',
+                  password_confirmation: 'test123'
+               }
+           }.to_json,
+           request_headers
+
+      response.status.should eq(451)
+
+      response.content_type.should eq(Mime::JSON)
+
+      error = json(response.body)[:error]
+      error[:message].should eq(UserErrors::USER)
+    end
+  end
+
+  context 'with an existing email' do
+    it 'should return status code 452 and an error message' do
+      post '/users/validity',
+           {
+               user: {
+                   userName: @not_unique_user,
+                   email: @mail,
+                   password: 'test123',
+                   password_confirmation: 'test123'
+               },
+           }.to_json,
+           request_headers
+
+      response.status.should eq(452)
+
+      response.content_type.should eq(Mime::JSON)
+
+      error = json(response.body)[:error]
+      error[:message].should eq(UserErrors::EMAIL)
+    end
+  end
 end

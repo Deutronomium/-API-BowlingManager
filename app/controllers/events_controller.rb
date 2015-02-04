@@ -61,7 +61,12 @@ class EventsController < ApplicationController
     event_id = get_participants_params[:event_id]
     event = Event.find(event_id)
     participants = event.participations.merge(Participation.participant)
-    render json: participants, status: 200
+    users = Array.new
+    participants.each do |participant|
+      user = User.find(participant[:user_id])
+      users << user
+    end
+    render json: users, status: 200
   rescue ActiveRecord::RecordNotFound
     error = {error: {message: 'Event not found'}}
     render json: error, status: 404
