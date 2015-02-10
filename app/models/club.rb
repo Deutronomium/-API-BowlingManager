@@ -3,6 +3,8 @@ class Club < ActiveRecord::Base
 
   has_many :users
   has_many :events
+  has_many :fines
+  has_many :drinks
 
   def attribute_valid?(attribute_name)
     self.valid?

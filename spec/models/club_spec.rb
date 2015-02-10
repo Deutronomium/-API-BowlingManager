@@ -34,5 +34,7 @@ describe Club do
   context '#associations' do
     it { should have_many(:users) }
     it { should have_many(:events) }
+    it { should have_many(:drinks) }
+    it { should have_many(:fines) }
   end
 end

@@ -32,6 +32,4 @@ describe Drink do
   context 'associations' do
     it { should belong_to(:club) }
   end
-
-
 end
