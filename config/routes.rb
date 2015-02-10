@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :clubs
   resources :events
   resources :participations
+  resources :drinks
   resources :sessions, only: [:new, :create]
 
   post 'users/validity', to: 'users#check'

@@ -35,7 +35,7 @@ describe 'creating users' do
       user[:lastName].should eq('Engelkes')
       user[:email].should eq('patrick.engelkes@gmail.com')
       user[:street].should eq('Friedenstraße 149')
-      user[:club_id].should eq(1)
+      user[:club_id].should eq(@club.id)
       user[:city].should eq('Rheine')
     end
 
