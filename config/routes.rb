@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :events
   resources :participations
   resources :drinks
+  resources :fines
   resources :sessions, only: [:new, :create]
 
   post 'users/validity', to: 'users#check'
