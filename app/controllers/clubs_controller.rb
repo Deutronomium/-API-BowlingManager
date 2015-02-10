@@ -75,20 +75,24 @@ class ClubsController < ApplicationController
   def add_members
     club_params = params[:club]
 
-    club = Club.find_by_name(club_params[:name])
+    club = Club.find(club_params[:id])
     members = club_params[:members]
 
     if club.nil?
       error = {error: {message: 'Could not find given club!'}}
-      render json: error, status: 404
+      render json: error, status: 422
     else
-      members.each do |member|
-        user = User.find_by_phone_number(member)
-        user.update_attribute(:club_id, club.id)
+      if !members.nil?
+        members.each do |member|
+          user = User.find_by_phone_number(member)
+          user.update_attribute(:club_id, club.id)
+        end
       end
-
       render nothing: true, status: 200
     end
+  rescue ActiveRecord::RecordNotFound
+    error = {error: {message: 'Club does not exist!'}}
+    render json: error, status: 422
   end
 
 
@@ -97,6 +101,6 @@ class ClubsController < ApplicationController
   end
 
   def add_members_params
-    params.require(:club).permit(:name, :members => [])
+    params.require(:club).permit(:id, :members => [])
   end
 end
