@@ -24,7 +24,6 @@ describe 'checking user_validity' do
 
       response.content_type.should eq(Mime::JSON)
 
-      print response.body
       user = json(response.body)[:user]
       user[:userName].should eq(@not_unique_user)
       user[:email].should eq(@not_unique_mail)
