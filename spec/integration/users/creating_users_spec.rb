@@ -38,7 +38,6 @@ describe 'creating users' do
       user[:club_id].should eq(@club.id)
       user[:city].should eq('Rheine')
     end
-
   end
 
   context 'with invalid data should fail' do

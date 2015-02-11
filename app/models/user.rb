@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
   belongs_to :club
   has_many :participations
   has_many :events, :through => :participations
+  has_many :fine_payments
 
   #Object methods
   def downcase_email

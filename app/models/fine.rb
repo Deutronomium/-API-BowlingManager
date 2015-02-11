@@ -5,4 +5,5 @@ class Fine < ActiveRecord::Base
 
   #Associations
   belongs_to :club
+  has_many :fine_payments
 end

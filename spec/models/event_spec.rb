@@ -31,5 +31,6 @@ describe Event do
     it { should belong_to(:club) }
     it { should have_many(:participations) }
     it { should have_many(:users).through(:participations) }
+    it { should have_many(:fine_payments) }
   end
 end

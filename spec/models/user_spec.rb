@@ -67,6 +67,7 @@ describe User do
     it { should belong_to(:club) }
     it { should have_many(:participations) }
     it { should have_many(:events).through(:participations) }
+    it { should have_many(:fine_payments) }
   end
 
   context '#downcase email' do

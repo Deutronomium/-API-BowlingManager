@@ -31,5 +31,6 @@ describe Fine do
 
   context '#associations' do
     it { should belong_to(:club) }
+    it { should have_many(:fine_payments) }
   end
 end
