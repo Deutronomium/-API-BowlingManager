@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :participations
   resources :drinks
   resources :fines
+  resources :drink_payments
   resources :sessions, only: [:new, :create]
 
   post 'users/validity', to: 'users#check'
