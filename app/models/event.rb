@@ -8,5 +8,4 @@ class Event < ActiveRecord::Base
   belongs_to :club
   has_many :participations
   has_many :users, :through => :participations
-  has_many :fine_payments
 end

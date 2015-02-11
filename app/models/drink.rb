@@ -5,4 +5,5 @@ class Drink < ActiveRecord::Base
 
   #Associations
   belongs_to :club
+  has_many :drink_payments
 end

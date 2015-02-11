@@ -10,8 +10,7 @@ describe FinePayment do
   end
 
   context 'associations' do
-    it { should belong_to(:user) }
-    it { should belong_to(:event) }
     it { should belong_to(:fine) }
+    it { should belong_to(:participation) }
   end
 end

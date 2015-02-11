@@ -25,5 +25,7 @@ describe Participation do
   describe 'associations' do
     it { should belong_to(:user) }
     it { should belong_to(:event) }
+    it { should have_many(:fine_payments) }
+    it { should have_many(:drink_payments) }
   end
 end
