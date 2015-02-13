@@ -21,4 +21,6 @@ Rails.application.routes.draw do
 
   post 'friends/getRegisteredFriends', to: 'friends#getRegisteredFriends'
   post 'friends/removeFriendFromClub', to: 'friends#removeFriendFromClub'
+
+  post 'drinks/get_by_club', to: 'drinks#get_by_club'
 end
