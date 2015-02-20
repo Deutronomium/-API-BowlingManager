@@ -18,6 +18,15 @@ class FinesController < ApplicationController
     render json: fines, status: 200
   end
 
+  def update
+    fine = Fine.find(params[:id])
+    if fine.update(fine_params)
+      render json: fine, status: 200
+    else
+      render json: fine.errors, status: 422
+    end
+  end
+
   def fine_params
     params.require(:fine).permit(:name, :amount, :club_id)
   end

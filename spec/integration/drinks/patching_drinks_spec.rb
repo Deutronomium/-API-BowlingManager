@@ -12,10 +12,7 @@ describe 'patching drinks' do
                   name: 'Patch'
               }
           }.to_json,
-          {
-              'Accept' => Mime::JSON,
-              'Content-Type' => Mime::JSON.to_s
-          }
+          patch_header
 
       response.status.should eq(200)
 
@@ -34,10 +31,7 @@ describe 'patching drinks' do
                     name: nil
                 }
             }.to_json,
-            {
-                'Accept' => Mime::JSON,
-                'Content-Type' => Mime::JSON.to_s
-            }
+            patch_header
 
       response.status.should eq(422)
 

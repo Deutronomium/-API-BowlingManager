@@ -9,6 +9,13 @@ module Helpers
     }
   end
 
+  def patch_header
+    return {
+        'Accpet' => Mime::JSON,
+        'Content-Type' => Mime::JSON.to_s
+    }
+  end
+
   def json(body)
     JSON.parse(body, symbolize_names: true)
   end
