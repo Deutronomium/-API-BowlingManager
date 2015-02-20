@@ -6,7 +6,7 @@ describe 'patching drinks' do
       @club = FactoryGirl.create(:club)
       @drink = FactoryGirl.create(:drink, club_id: @club.id)
 
-      patch ("/drinks/#{@drink.id}"),
+      post ("/drinks/#{@drink.id}"),
           {
               drink: {
                   name: 'Patch'
@@ -25,7 +25,7 @@ describe 'patching drinks' do
       @club = FactoryGirl.create(:club)
       @drink = FactoryGirl.create(:drink, club_id: @club.id)
 
-      patch ("/drinks/#{@drink.id}"),
+      post ("/drinks/#{@drink.id}"),
             {
                 drink: {
                     name: nil

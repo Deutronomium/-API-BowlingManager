@@ -28,7 +28,9 @@ Rails.application.routes.draw do
 
   #Drinks
   post 'drinks/get_by_club', to: 'drinks#get_by_club'
+  post 'drinks/:id', to: 'drinks#update'
 
   #Fines
   post 'fines/get_by_club', to: 'fines#get_by_club'
+  post 'fines/:id', to: 'fines#update'
 end

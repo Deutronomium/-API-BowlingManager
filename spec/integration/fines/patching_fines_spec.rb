@@ -6,7 +6,7 @@ describe 'patching fines' do
       @club = FactoryGirl.create(:club)
       @fine = FactoryGirl.create(:fine, club_id: @club.id)
 
-      patch ("/fines/#{@fine.id}"),
+      post ("/fines/#{@fine.id}"),
           {
               fine: {
                   name: 'Patch'
@@ -25,7 +25,7 @@ describe 'patching fines' do
       @club = FactoryGirl.create(:club)
       @fine = FactoryGirl.create(:fine, club_id: @club.id)
 
-      patch ("fines/#{@fine.id}"),
+      post ("fines/#{@fine.id}"),
           {
               fine: {
                   name: nil
