@@ -10,9 +10,9 @@ describe 'creating users' do
       post '/users',
            {
                user: {
-                   userName: 'Deutro',
-                   firstName: 'Patrick',
-                   lastName: 'Engelkes',
+                   user_name: 'Deutro',
+                   first_name: 'Patrick',
+                   last_name: 'Engelkes',
                    email: 'patrick.engelkes@gmail.com',
                    street: 'Friedenstraße 149',
                    club_id: @club.id,
@@ -30,9 +30,9 @@ describe 'creating users' do
 
       user = json(response.body)[:user]
       user_url(user[:id]).should eq(response.location)
-      user[:userName].should eq('Deutro')
-      user[:firstName].should eq('Patrick')
-      user[:lastName].should eq('Engelkes')
+      user[:user_name].should eq('Deutro')
+      user[:first_name].should eq('Patrick')
+      user[:last_name].should eq('Engelkes')
       user[:email].should eq('patrick.engelkes@gmail.com')
       user[:street].should eq('Friedenstraße 149')
       user[:club_id].should eq(@club.id)
@@ -45,9 +45,9 @@ describe 'creating users' do
       post '/users',
            {
                user: {
-                   userName: nil,
-                   firstName: 'Patrick',
-                   lastName: 'Engelkes',
+                   user_name: nil,
+                   first_name: 'Patrick',
+                   last_name: 'Engelkes',
                    password: 'test',
                    password_confirmation: 'test',
                    email: 'test@test.de'

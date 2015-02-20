@@ -4,7 +4,7 @@ describe '#logging in a user' do
 
   context 'with valid user credentials' do
     it 'should return the user' do
-      FactoryGirl.create(:user, userName: 'Deutro', email: 'Test', password: 'test123', password_confirmation: 'test123')
+      FactoryGirl.create(:user, user_name: 'Deutro', email: 'Test', password: 'test123', password_confirmation: 'test123')
 
       post '/sessions',
            {session: {
@@ -19,7 +19,7 @@ describe '#logging in a user' do
 
       userJson = json(response.body)
       user = userJson[:user]
-      user[:userName].should eq('Deutro')
+      user[:user_name].should eq('Deutro')
     end
   end
 

@@ -6,7 +6,7 @@ describe 'listing participations' do
     @club = FactoryGirl.create(:club)
 
     @Deutro = FactoryGirl.create(:user, club: @club)
-    @Munni = FactoryGirl.create(:user, club: @club, userName: 'Munni', email: 'munni@munni.com', phone_number: '0222222222')
+    @Munni = FactoryGirl.create(:user, club: @club, user_name: 'Munni', email: 'munni@munni.com', phone_number: '0222222222')
 
     @bowling = FactoryGirl.create(:event)
     @driving = FactoryGirl.create(:event, name: 'Driving')

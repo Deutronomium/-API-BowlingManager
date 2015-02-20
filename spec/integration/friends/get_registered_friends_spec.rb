@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'listing all friends' do
   context 'answer type' do
     before do
-      FactoryGirl.create(:user, phone_number: '11111', userName: 'phoneNumber')
+      FactoryGirl.create(:user, phone_number: '11111', user_name: 'phoneNumber')
       FactoryGirl.create(:user, phone_number: '22222')
       FactoryGirl.create(:user, phone_number: '33333')
       FactoryGirl.create(:user, phone_number: '44444')
@@ -36,7 +36,7 @@ describe 'listing all friends' do
 
       it 'should answer with the right user object' do
         friend = friends.first
-        friend[:userName].should eq('phoneNumber')
+        friend[:user_name].should eq('phoneNumber')
       end
     end
   end

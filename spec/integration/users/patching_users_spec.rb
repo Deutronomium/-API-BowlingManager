@@ -9,7 +9,7 @@ describe '#patching users' do
   context '#updating user with valid data' do
     before do
       patch ("/users/#{user.id}"),
-            { user: { userName: 'Patch', firstName: 'Test', lastName: 'Test', password: 'test', password_confirmation: 'test', email: 'test@test.de' } }.to_json,
+            { user: { user_name: 'Patch', first_name: 'Test', last_name: 'Test', password: 'test', password_confirmation: 'test', email: 'test@test.de' } }.to_json,
             { 'Accept' => Mime::JSON, 'Content-Type' => Mime::JSON.to_s }
     end
 
@@ -18,14 +18,14 @@ describe '#patching users' do
     end
 
     it 'should update the user name' do
-      user.reload.userName.should eq('Patch')
+      user.reload.user_name.should eq('Patch')
     end
   end
 
   context '#updating user with invalid data' do
     before do
       patch ("/users/#{user.id}"),
-            { user: { userName: nil, firstName: 'Test', lastName: 'Test', password: 'test', password_confirmation: 'test', email: 'test@test.de' } }.to_json,
+            { user: { user_name: nil, first_name: 'Test', last_name: 'Test', password: 'test', password_confirmation: 'test', email: 'test@test.de' } }.to_json,
             { 'Accept' => Mime::JSON, 'Content-Type' => Mime::JSON.to_s }
     end
 
@@ -33,9 +33,9 @@ describe '#patching users' do
       response.status.should eq(422)
     end
 
-    it 'should have an error for username' do
+    it 'should have an error for user_name' do
       error = json(response.body)
-      error[:userName].should eq(["can't be blank"])
+      error[:user_name].should eq(["can't be blank"])
     end
 
 

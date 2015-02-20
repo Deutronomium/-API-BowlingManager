@@ -21,7 +21,7 @@ class FriendsController < ApplicationController
     club_name = friends[:club_name]
 
     club = Club.find_by_name(club_name)
-    user = User.find_by_userName(user_name)
+    user = User.find_by_user_name(user_name)
 
     if user 
       club.users.delete(user)

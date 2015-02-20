@@ -13,7 +13,7 @@ describe 'remove a friend from a club' do
 			post '/friends/removeFriendFromClub',
 				{
 					friends: {
-						user_name: @user.userName,
+						user_name: @user.user_name,
 						club_name: @club.name
 					} 
 				}.to_json,

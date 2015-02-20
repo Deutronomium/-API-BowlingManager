@@ -12,8 +12,8 @@ describe User do
 
   context '#fields' do
     context 'presence' do
-      it 'is invalid without a username' do
-        user.userName = nil
+      it 'is invalid without a user_name' do
+        user.user_name = nil
         user.should_not be_valid
       end
 
@@ -41,13 +41,13 @@ describe User do
     context 'uniqueness' do
       before do
         FactoryGirl.create(:user)
-        user.userName = 'NotUnique'
+        user.user_name = 'NotUnique'
         user.email = 'NotUnique'
         user.phone_number = 'NotUnique'
       end
 
-      it 'should be invalid with an already existing username' do
-        user.userName = User.first.userName
+      it 'should be invalid with an already existing user_name' do
+        user.user_name = User.first.user_name
         user.should_not be_valid
       end
 
@@ -89,9 +89,9 @@ describe User do
       user.phone_number = 'NotUnique'
     end
 
-    it 'should return false for an invalid userName' do
-      user.userName = User.first.userName
-      user.attribute_valid?('userName').should be_false
+    it 'should return false for an invalid user_name' do
+      user.user_name = User.first.user_name
+      user.attribute_valid?('user_name').should be_false
     end
 
     it 'should return false for an invalid email' do
@@ -100,13 +100,13 @@ describe User do
     end
   end
 
-  context '#validate email and userName' do
+  context '#validate email and user_name' do
     before do
       FactoryGirl.create(:user)
     end
 
-    it 'should return an error if userName and email are not unique' do
-      user.userName = User.first.userName
+    it 'should return an error if user_name and email are not unique' do
+      user.user_name = User.first.user_name
       user.email = User.first.email
       user.email_and_user_name_valid?.should be_false
     end
@@ -116,8 +116,8 @@ describe User do
       user.email_and_user_name_valid?.should be_true
     end
 
-    it 'should be true if only the username is not unique' do
-      user.userName = 'NotUnique'
+    it 'should be true if only the user_name is not unique' do
+      user.user_name = 'NotUnique'
       user.email_and_user_name_valid?.should be_true
     end
   end

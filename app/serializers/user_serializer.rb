@@ -4,7 +4,7 @@ class UserSerializer < ActiveModel::Serializer
     config.embed_in_root = false
   end
 
-  attributes :id, :userName, :firstName, :lastName, :email, :street, :city, :club_id, :phone_number
+  attributes :id, :user_name, :first_name, :last_name, :email, :street, :city, :club_id, :phone_number
 
   has_one :club
 end

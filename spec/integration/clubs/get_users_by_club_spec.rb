@@ -5,8 +5,8 @@ describe 'listing all users from a club' do
 		@findClub = FactoryGirl.create(:club, name: 'TestClub')
 		@notFindClub = FactoryGirl.create(:club, name: 'NotFindClub')
 
-		FactoryGirl.create(:user, userName: 'TrueUser1', club_id: @findClub.id)
-		FactoryGirl.create(:user, userName: 'TrueUser2', club_id: @findClub.id)
+		FactoryGirl.create(:user, user_name: 'TrueUser1', club_id: @findClub.id)
+		FactoryGirl.create(:user, user_name: 'TrueUser2', club_id: @findClub.id)
 
 		FactoryGirl.create(:user, club_id: @notFindClub.id)
 		FactoryGirl.create(:user, club_id: @notFindClub.id)
@@ -46,8 +46,8 @@ describe 'listing all users from a club' do
 				trueUser1 = users.first
 				trueUser2 = users.last
 
-				trueUser1[:userName].should eq('TrueUser1')
-				trueUser2[:userName].should eq('TrueUser2')
+				trueUser1[:user_name].should eq('TrueUser1')
+				trueUser2[:user_name].should eq('TrueUser2')
 			end
 		end
 	end

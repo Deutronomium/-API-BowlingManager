@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'deleting users' do
   context 'deleting an existing user' do
     before do
-      @user = FactoryGirl.create(:user, userName: 'TestUser')
+      @user = FactoryGirl.create(:user, user_name: 'TestUser')
     end
 
     context 'deleing user by id' do

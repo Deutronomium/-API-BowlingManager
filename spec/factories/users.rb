@@ -1,6 +1,6 @@
 FactoryGirl.define do
 
-  sequence :userName do |n|
+  sequence :user_name do |n|
     "User#{n}"
   end
 
@@ -13,9 +13,9 @@ FactoryGirl.define do
   end
 
   factory :user do
-    userName { generate(:userName) }
-    firstName 'Patrick'
-    lastName 'Engelkes'
+    user_name { generate(:user_name) }
+    first_name 'Patrick'
+    last_name 'Engelkes'
     email { generate(:email) }
     password 'test123'
     password_confirmation 'test123'

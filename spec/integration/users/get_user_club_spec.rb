@@ -3,8 +3,8 @@ require 'spec_helper'
 describe 'creating users' do
   before do
     @club = FactoryGirl.create(:club, name: 'GetClubTest')
-    FactoryGirl.create(:user, userName: 'TestUser', club_id: @club.id)
-    FactoryGirl.create(:user, userName: 'WithoutClub', club_id: nil)
+    FactoryGirl.create(:user, user_name: 'TestUser', club_id: @club.id)
+    FactoryGirl.create(:user, user_name: 'WithoutClub', club_id: nil)
   end
 
   context '#creating user with valid data should succeed' do
@@ -12,7 +12,7 @@ describe 'creating users' do
       post '/users/user_club',
         {
           user: {
-            userName: 'TestUser'
+            user_name: 'TestUser'
           }
         }.to_json,
         {
@@ -43,7 +43,7 @@ describe 'creating users' do
     before do
       post '/users/user_club',
         { user: {
-          userName: 'WithoutClub'
+          user_name: 'WithoutClub'
           } 
         }.to_json,
         { 

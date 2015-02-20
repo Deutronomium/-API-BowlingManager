@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150211174347) do
+ActiveRecord::Schema.define(version: 20150220083430) do
 
   create_table "clubs", force: true do |t|
     t.string   "name"
@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20150211174347) do
   end
 
   create_table "drink_payments", force: true do |t|
-    t.integer "drink_id"
+    t.integer  "drink_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer "participation_id"
+    t.integer  "participation_id"
   end
 
   create_table "drinks", force: true do |t|
@@ -43,16 +43,16 @@ ActiveRecord::Schema.define(version: 20150211174347) do
   end
 
   create_table "fine_payments", force: true do |t|
-    t.integer "fine_id"
+    t.integer  "fine_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer "participation_id"
+    t.integer  "participation_id"
   end
 
   create_table "fines", force: true do |t|
-    t.string "name"
-    t.decimal "amount", precision: 8, scale: 2
-    t.integer "club_id"
+    t.string   "name"
+    t.decimal  "amount",     precision: 8, scale: 2
+    t.integer  "club_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,9 +66,9 @@ ActiveRecord::Schema.define(version: 20150211174347) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "userName"
-    t.string   "firstName"
-    t.string   "lastName"
+    t.string   "user_name"
+    t.string   "first_name"
+    t.string   "last_name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "city"

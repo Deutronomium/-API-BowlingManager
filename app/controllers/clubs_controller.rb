@@ -43,7 +43,7 @@ class ClubsController < ApplicationController
 
   def delete_by_name
     user_name = params[:club][:name]
-    user = User.find_by_userName(user_name)
+    user = User.find_by_user_name(user_name)
 
     user.destroy!
     render nothing: true, status: 204

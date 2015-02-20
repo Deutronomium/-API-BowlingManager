@@ -1,16 +1,16 @@
 class UsersController < ApplicationController
   def index
     users = User.all
-    if userName = params[:userName]
-        users = users.where(userName: userName)
+    if user_name = params[:user_name]
+        users = users.where(user_name: user_name)
     end
     render json: users, status: 200
   end
 
   def user_club
     userParams = params[:user]
-    userName = userParams[:userName]
-    user = User.find_by_userName(userName)
+    user_name = userParams[:user_name]
+    user = User.find_by_user_name(user_name)
     if user.club_id?
       club = Club.find(user.club_id)
       render json: club, status: 200
@@ -61,10 +61,10 @@ class UsersController < ApplicationController
 
   def check
     user = User.new(user_params)
-    if !user.attribute_valid?('userName') && user.attribute_valid?('email')
+    if !user.attribute_valid?('user_name') && user.attribute_valid?('email')
       error = { error: { message: UserErrors::USER } }
       render json: error, status: 451
-    elsif !user.attribute_valid?('email') && user.attribute_valid?('userName')
+    elsif !user.attribute_valid?('email') && user.attribute_valid?('user_name')
       error = { error: { message: UserErrors::EMAIL} }
       render json: error, status: 452
     elsif !user.email_and_user_name_valid?
@@ -76,7 +76,7 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:userName, :firstName, :lastName, :email, :club_id, :street, :city, :password,
+    params.require(:user).permit(:user_name, :first_name, :last_name, :email, :club_id, :street, :city, :password,
                                  :password_confirmation, :phone_number)
   end
 end

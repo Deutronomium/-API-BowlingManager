@@ -5,8 +5,8 @@ describe 'listing users' do
   before do
     @club = FactoryGirl.create(:club)
 
-    FactoryGirl.create(:user, club: @club, userName: 'Deutro')
-    FactoryGirl.create(:user, club: @club, userName: 'Munni', email: 'munni@gmail.com', phone_number: '0222222222')
+    FactoryGirl.create(:user, club: @club, user_name: 'Deutro')
+    FactoryGirl.create(:user, club: @club, user_name: 'Munni', email: 'munni@gmail.com', phone_number: '0222222222')
 
     get '/users'
   end
@@ -39,7 +39,7 @@ describe 'listing users' do
 
   context 'get by user name' do
     before do
-      get '/users?userName=Deutro'
+      get '/users?user_name=Deutro'
     end
 
     context '#answer type' do
@@ -55,8 +55,8 @@ describe 'listing users' do
     context '#answer content' do
       let(:users) { json(response.body)[:users] }
 
-      it 'should answer with the user who has the userName Deutro' do
-        users.first[:userName].should == User.find_by_userName('Deutro').userName
+      it 'should answer with the user who has the user_name Deutro' do
+        users.first[:user_name].should == User.find_by_user_name('Deutro').user_name
       end
     end
   end

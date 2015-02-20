@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   #Validation
-  validates :userName, presence: true, uniqueness: true
+  validates :user_name, presence: true, uniqueness: true
   validates :password, presence: true
   validates :password_confirmation, presence: true
   validates :email, presence: true, uniqueness: true
@@ -27,6 +27,6 @@ class User < ActiveRecord::Base
 
   def email_and_user_name_valid?
     self.valid?
-    (self.errors[:userName].blank? || self.errors[:email].blank?)
+    (self.errors[:user_name].blank? || self.errors[:email].blank?)
   end
 end
