@@ -10,7 +10,19 @@ class FinesController < ApplicationController
     end
   end
 
+  def get_by_club
+    club_id = get_by_club_params[:club_id]
+
+    fines = Fine.where(:club_id => club_id)
+
+    render json: fines, status: 200
+  end
+
   def fine_params
     params.require(:fine).permit(:name, :amount, :club_id)
+  end
+
+  def get_by_club_params
+    params.require(:fine).permit(:club_id)
   end
 end
