@@ -19,12 +19,12 @@ Rails.application.routes.draw do
   post 'clubs/get_members_by_club', to: 'clubs#get_members'
 
   #Events
-  post 'events/get_events_by_club', to: 'events#get_events_by_club'
+  post 'events/get_by_club', to: 'events#get_by_club'
   post 'events/get_participants', to: 'events#get_participants'
 
   #Friends
-  post 'friends/getRegisteredFriends', to: 'friends#getRegisteredFriends'
-  post 'friends/removeFriendFromClub', to: 'friends#removeFriendFromClub'
+  post 'friends/get_registered_friends', to: 'friends#get_registered_friends'
+  post 'friends/remove_friend_from_club', to: 'friends#remove_friend_from_club'
 
   #Drinks
   post 'drinks/get_by_club', to: 'drinks#get_by_club'

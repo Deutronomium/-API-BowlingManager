@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'listing all friends' do
+describe 'listing all registered friends' do
   context 'answer type' do
     before do
       FactoryGirl.create(:user, phone_number: '11111', user_name: 'phoneNumber')
@@ -8,7 +8,7 @@ describe 'listing all friends' do
       FactoryGirl.create(:user, phone_number: '33333')
       FactoryGirl.create(:user, phone_number: '44444')
       FactoryGirl.create(:user, phone_number: '55555')
-      post '/friends/getRegisteredFriends',
+      post '/friends/get_registered_friends',
            { friends: {
                phone_numbers: %w(11111 22222 44444)
            } }.to_json,

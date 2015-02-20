@@ -46,7 +46,7 @@ class EventsController < ApplicationController
     end
   end
 
-  def get_events_by_club
+  def get_by_club
       club = Club.find_by_id(get_events_by_club_params[:club_id])
       if !club.nil?
         events = club.events

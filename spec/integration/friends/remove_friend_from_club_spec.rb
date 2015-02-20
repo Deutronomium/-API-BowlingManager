@@ -10,7 +10,7 @@ describe 'remove a friend from a club' do
 
 	context 'which exists in the database' do
 		before do
-			post '/friends/removeFriendFromClub',
+			post '/friends/remove_friend_from_club',
 				{
 					friends: {
 						user_name: @user.user_name,
@@ -43,7 +43,7 @@ describe 'remove a friend from a club' do
 
 	context 'which does not exis in the database' do
 		before do
-			post '/friends/removeFriendFromClub',
+			post '/friends/remove_friend_from_club',
 				{
 					friends: {
 						user_name: 'I do not exist in database',

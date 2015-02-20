@@ -10,7 +10,7 @@ describe 'listing all events from given club' do
 
 	context 'return 2 events from the created club with a correct club id' do
 		before do 
-			post '/events/get_events_by_club',
+			post '/events/get_by_club',
 				{
 					event: {
 						club_id: @club.id
@@ -39,7 +39,7 @@ describe 'listing all events from given club' do
 
 	context 'return an error with a wrong club_id'
 		before do
-			post '/events/get_events_by_club',
+			post '/events/get_by_club',
 				{
 					event: {
 						club_id: 100

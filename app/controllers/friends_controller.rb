@@ -1,5 +1,5 @@
 class FriendsController < ApplicationController
-  def getRegisteredFriends
+  def get_registered_friends
     friend =  params[:friends]
     phone_numbers = friend[:phone_numbers]
     matching_users = friend_phone_numbers(phone_numbers)
@@ -15,7 +15,7 @@ class FriendsController < ApplicationController
     params.require(:friends).permit(:user_name, :club_name)
   end
 
-  def removeFriendFromClub
+  def remove_friend_from_club
     friends = params[:friends]
     user_name = friends[:user_name]
     club_name = friends[:club_name]
