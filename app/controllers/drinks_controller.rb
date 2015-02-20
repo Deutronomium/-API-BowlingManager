@@ -18,6 +18,15 @@ class DrinksController < ApplicationController
     render json: drinks, status: 200
   end
 
+  def update
+    drink = Drink.find(params[:id])
+    if drink.update(drink_params)
+      render json: drink, status: 200
+    else
+      render json: drink.errors, status: 422
+    end
+  end
+
   def drink_params
     params.require(:drink).permit(:name, :price, :club_id)
   end

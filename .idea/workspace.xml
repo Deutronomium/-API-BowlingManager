@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ffc9e3-a33c-4e38-b658-5c90f3fe3ba6" name="Default" comment="Get Drinks by Club.">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/integration/events/list_events_by_club.rb" afterPath="$PROJECT_DIR$/spec/integration/events/get_by_club_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" afterPath="$PROJECT_DIR$/.idea/BowlingManagerAPI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/events_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/events_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/friends_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/friends_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/friends/get_registered_friends_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/friends/get_registered_friends_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/integration/friends/remove_friend_from_club_spec.rb" afterPath="$PROJECT_DIR$/spec/integration/friends/remove_friend_from_club_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BowlingManagerAPI.iws" />
@@ -146,7 +139,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66579634" vertical-offset="0" max-vertical-offset="600">
+            <state vertical-scroll-proportion="0.4699739" vertical-offset="75" max-vertical-offset="600">
               <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
               <folding />
             </state>
@@ -1559,7 +1552,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66579634" vertical-offset="0" max-vertical-offset="600">
+        <state vertical-scroll-proportion="0.4699739" vertical-offset="75" max-vertical-offset="600">
           <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding />
         </state>
