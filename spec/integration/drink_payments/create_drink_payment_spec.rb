@@ -11,7 +11,8 @@ describe 'creating a drink payment' do
     post '/drink_payments',
          {
              drink_payment: {
-                 participation_id: @participation.id,
+                 user_id: @user.id,
+                 event_id: @event.id,
                  drink_id: @drink.id
              }
          }.to_json,

@@ -12,7 +12,8 @@ describe 'creating fine payment' do
     post '/fine_payments',
          {
              fine_payment: {
-                 participation_id: @participation.id,
+                 user_id: @user.id,
+                 event_id: @event.id,
                  fine_id: @fine.id
              }
          }.to_json,
