@@ -33,4 +33,10 @@ Rails.application.routes.draw do
   #Fines
   post 'fines/get_by_club', to: 'fines#get_by_club'
   post 'fines/:id', to: 'fines#update'
+
+  #DrinkPayments
+  post 'drink_payments/get_by_user_and_event', to: 'drink_payments#get_by_user_and_event'
+
+  #FinePayments
+  post 'fine_payments/get_by_user_and_event', to: 'fine_payments#get_by_user_and_event'
 end

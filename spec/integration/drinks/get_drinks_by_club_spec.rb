@@ -6,12 +6,12 @@ describe 'getting all drinks of a given club' do
       @club = FactoryGirl.create(:club)
 
       (0..4).each do |i|
-        FactoryGirl.create(:drink, club_id: @club.id)
+        FactoryGirl.create(:drinkOne, club_id: @club.id)
       end
 
       post '/drinks/get_by_club',
            {
-               drink: {
+               drinkOne: {
                    club_id: @club.id
                }
            }.to_json,
