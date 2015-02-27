@@ -18,8 +18,17 @@ class DrinkPaymentsController < ApplicationController
     user_id = get_by_user_and_event_params[:user_id]
     event_id = get_by_user_and_event_params[:event_id]
 
-    drink_payments = DrinkPayment.get_drink_by_user_and_event(user_id, event_id)
+    drink_payments = DrinkPayment.get_drinks_by_user_and_event(user_id, event_id)
     render json: drink_payments, status: 200
+  end
+
+  def total_by_user_and_event
+    user_id = get_by_user_and_event_params[:user_id]
+    event_id = get_by_user_and_event_params[:event_id]
+
+    total_price = DrinkPayment.total_amount_by_user_and_event(user_id, event_id)
+    total_price_json = {total_price: total_price}
+    render json: total_price_json, status: 200
   end
 
 

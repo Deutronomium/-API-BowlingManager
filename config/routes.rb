@@ -36,6 +36,7 @@ Rails.application.routes.draw do
 
   #DrinkPayments
   post 'drink_payments/get_by_user_and_event', to: 'drink_payments#get_by_user_and_event'
+  post 'drink_payments/total_by_user_and_event', to: 'drink_payments#total_by_user_and_event'
 
   #FinePayments
   post 'fine_payments/get_by_user_and_event', to: 'fine_payments#get_by_user_and_event'
