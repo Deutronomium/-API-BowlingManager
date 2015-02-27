@@ -17,8 +17,8 @@ class DrinkPaymentsController < ApplicationController
   def get_by_user_and_event
     user_id = get_by_user_and_event_params[:user_id]
     event_id = get_by_user_and_event_params[:event_id]
-    participation = Participation.where(user_id: user_id, event_id: event_id)
-    drink_payments = DrinkPayment.where(participation: participation)
+
+    drink_payments = DrinkPayment.get_drink_by_user_and_event(user_id, event_id)
     render json: drink_payments, status: 200
   end
 

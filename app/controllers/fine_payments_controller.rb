@@ -18,8 +18,7 @@ class FinePaymentsController < ApplicationController
   def get_by_user_and_event
     user_id = get_by_user_and_event_params[:user_id]
     event_id = get_by_user_and_event_params[:event_id]
-    participation = Participation.where(user_id: user_id, event_id: event_id)
-    fine_payments = FinePayment.where(participation: participation)
+    fine_payments = FinePayment.get_by_user_and_event(user_id, event_id)
     render json: fine_payments, status: 200
   end
 
