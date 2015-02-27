@@ -40,4 +40,5 @@ Rails.application.routes.draw do
 
   #FinePayments
   post 'fine_payments/get_by_user_and_event', to: 'fine_payments#get_by_user_and_event'
+  post 'fine_payments/total_by_user_and_event', to: 'fine_payments#total_by_user_and_event'
 end

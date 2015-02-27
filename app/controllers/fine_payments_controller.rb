@@ -22,6 +22,14 @@ class FinePaymentsController < ApplicationController
     render json: fine_payments, status: 200
   end
 
+  def total_by_user_and_event
+    user_id = get_by_user_and_event_params[:user_id]
+    event_id = get_by_user_and_event_params[:event_id]
+    total_amount = FinePayment.total_by_user_and_event(user_id, event_id)
+    total_amount_json = {total_amount: total_amount}
+    render json: total_amount_json, status: 200
+  end
+
   def fine_payment_params
     params.require(:fine_payment).permit(:user_id, :event_id, :fine_id)
   end

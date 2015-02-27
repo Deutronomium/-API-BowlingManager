@@ -19,7 +19,7 @@ describe 'list all drink payments from given user and event' do
     FactoryGirl.create(:drink_payment, drink: @drink_three, participation: @participation)
   end
 
-  context 'get all drinks' do
+  context 'get all drink payments' do
     it 'should succeed' do
       post 'drink_payments/get_by_user_and_event',
            {
