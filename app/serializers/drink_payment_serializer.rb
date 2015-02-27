@@ -1,7 +1,7 @@
 class DrinkPaymentSerializer < ActiveModel::Serializer
   ActiveModel::Serializer.setup do |config|
     config.embed = :ids
-    config.embed_in_root = false
+    config.embed_in_root = true
   end
 
   attributes :id, :participation_id, :drink_id

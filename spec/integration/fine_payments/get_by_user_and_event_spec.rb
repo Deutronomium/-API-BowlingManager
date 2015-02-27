@@ -33,7 +33,12 @@ describe 'list all dirnk payments from given user and event' do
       response.content_type.should eq(Mime::JSON)
 
       fine_payments = json(response.body)[:fine_payments]
+      participations = json(response.body)[:participations]
+      fines = json(response.body)[:fines]
+
       fine_payments.size.should eq(3)
+      participations.size.should eq(1)
+      fines.size.should eq(3)
     end
   end
 end

@@ -33,7 +33,12 @@ describe 'list all drink payments from given user and event' do
       response.content_type.should eq(Mime::JSON)
 
       drink_payments = json(response.body)[:drink_payments]
+      participations = json(response.body)[:participations]
+      drinks = json(response.body)[:drinks]
+
       drink_payments.size.should eq(3)
+      participations.size.should eq(1)
+      drinks.size.should eq(3)
     end
   end
 end
