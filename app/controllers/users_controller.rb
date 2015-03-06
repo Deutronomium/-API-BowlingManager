@@ -8,8 +8,8 @@ class UsersController < ApplicationController
   end
 
   def user_club
-    userParams = params[:user]
-    user_name = userParams[:user_name]
+    user_params = params[:user]
+    user_name = user_params[:user_name]
     user = User.find_by_user_name(user_name)
     if user.club_id?
       club = Club.find(user.club_id)
