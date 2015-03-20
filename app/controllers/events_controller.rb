@@ -49,7 +49,7 @@ class EventsController < ApplicationController
   def get_by_club
       club = Club.find_by_id(get_events_by_club_params[:club_id])
       if !club.nil?
-        events = club.events
+        events = club.events.order('date DESC')
         render json: events, status: 200
       else
         error = { error: { club: 'club not found'} }
