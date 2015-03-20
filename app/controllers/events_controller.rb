@@ -20,7 +20,7 @@ class EventsController < ApplicationController
       end
     end
     if event.save
-      render json: event, status: 201, location: event
+      render json: event, status: 201
     else
       render json: event.errors, status: 422
     end

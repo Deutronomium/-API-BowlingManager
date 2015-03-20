@@ -27,12 +27,12 @@ describe '#creating events' do
       it 'should respond with json' do
         response.content_type.should eq(Mime::JSON)
       end
-    end
 
-    context '#answer content' do
-      it 'should answer with the correct location' do
-        event = json(response.body)
-        response.location.should eq(event_url(event[:id]))
+      it 'should return the created event' do
+        event = json(response.body)[:event]
+        event[:name].should eq('Bowling')
+        event[:club_id].should eq(1)
+        event[:date].should eq('2015-01-08T23:55:00.000Z')
       end
     end
 
